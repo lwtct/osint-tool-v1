@@ -4,26 +4,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="/css/materialize.min.css">
-        <script src="/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <script src="/js/bootstrap.min.js"></script>
         <title>Home</title>
     </head>
     <body>
         <div class="container">
-            <center>
-            <h1 class="center-align">OSINT Toolset</h1>
-            </center>
-            <left><h1><select>
-                <option value="name">name</option>
-                <option value="email">email</option>
-            </select></h1></left>
-            <center><h1>{{ output }}</h1></center>
-        <right><h1><select>
-            <option value="adress">adress</option>
-            <option value="phone number">phone number</option>
-        </select></h1></right>
-            </h1>
-        </div>
+            <div class="row">
+                <div class="col align-self-center">
+                        <h1 class="text-center display-1">OSINT Toolset</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col align-self-left text-center">
+                    <h1>
+                        <input list="input" class="form-control" placeholder="Input" name="input"/>
+                        <datalist id="input">
+                              <option value="Name"/>
+                              <option value="Email"/>
+                        </datalist>
+                    </h1>
+                </div>
+                <div class="col align-self-center text-center">
 
+                </div>
+                <div class="col align-self-right text-center">
+                    <h1>
+                        <input list="output" class="form-control" placeholder="Output" name="output"/>
+                        <datalist id="output">
+                            <option value="Adress"/>
+                            <option value="Phone Number"/>
+                        </datalist>
+                    </h1>
+                </div>
+            </div>
+            <h1 class="display-3 text-center">{{ output }}</h1>
+        </div>
     </body>
+    
 </html>
