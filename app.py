@@ -13,6 +13,13 @@ with open('data/resources.json', 'r') as resources:
     data = json.load(resources)
     #add json input
 
+
+querry_type = {
+    'Address' : 1,
+    'Phone Number' : 2,
+    'Name' : 8
+}
+
 @app.route('/', methods=['POST'])
 def my_form_post():
     output_text = request.form['output']
@@ -20,6 +27,8 @@ def my_form_post():
     if output_text not in querry_type.keys() or input_text not in querry_type.keys():
         output = "Invalid Arguments"
         return render_template("index.html", types=querry_type.keys(), output=output)
+
+    ab115c34017f5fd862bb144cd6b36fd7f830bd29
 
     output_number = querry_type[output_text]
     input_number = querry_type[input_text]
