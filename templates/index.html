@@ -30,16 +30,21 @@
                 </div>
                 <div class="col align-self-right text-center">
                     <h1>
+                        <form method="POST" name="output">
                         <input list="output" class="form-control" placeholder="Output" name="output"/>
                         <datalist id="output">
                             <option value="Adress"/>
                             <option value="Phone Number"/>
                         </datalist>
+                        </form>
                     </h1>
                 </div>
             </div>
             <h1 class="display-3 text-center">{{ output }}</h1>
         </div>
     </body>
-    
+    <script type="text/javascript">
+    document.input.submit();
+    document.output.submit();
+    </script>
 </html>
