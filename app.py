@@ -24,7 +24,7 @@ def my_form_post():
     input_text = request.form['input']
     if output_text not in querry_type.keys() or input_text not in querry_type.keys():
         output = "Invalid Arguments"
-        return render_template("index.html", types=querry_type.keys(), output=output)
+        return render_template("index.jinja", types=querry_type.keys(), output=output)
 
     # ab115c34017f5fd862bb144cd6b36fd7f830bd29
     output_number = querry_type[output_text]
@@ -34,11 +34,11 @@ def my_form_post():
 
     # idea; loop over all the resources and look for anything with matching input and output tag.
     server_output="{} -> {}".format(input_text,output_text) #use for debugging, remove later
-    return render_template("index.html", types=querry_type.keys(), output=server_output)
+    return render_template("index.jinja", types=querry_type.keys(), output=server_output)
 
 @app.route("/", methods=['GET'])
 def root():
     output = request.args.get("input")
-    return render_template("index.html", types=querry_type.keys(), output=output)
+    return render_template("index.jinja", types=querry_type.keys(), output=output)
 
 app.run(debug=True)
