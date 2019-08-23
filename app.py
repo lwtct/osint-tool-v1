@@ -17,6 +17,10 @@ with open('data/resources.json', 'r') as resources:
 querry_type = {
     'Address' : 1,
     'Phone Number' : 2,
+    'online alias' : 3,
+    'general information' : 4,
+    'verification' : 5,
+    'IP adress' : 6,
     'Name' : 8
 }
 
@@ -28,8 +32,7 @@ def my_form_post():
         output = "Invalid Arguments"
         return render_template("index.html", types=querry_type.keys(), output=output)
 
-    ab115c34017f5fd862bb144cd6b36fd7f830bd29
-
+    # ab115c34017f5fd862bb144cd6b36fd7f830bd29
     output_number = querry_type[output_text]
     input_number = querry_type[input_text]
 

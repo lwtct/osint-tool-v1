@@ -20,7 +20,8 @@
                 <div class="col align-self-left text-center">
                     <h1>
                         
-                        <input list="input" class="form-control" placeholder="Input" name="input"/>
+                        <input list="input" class="form-control" placeholder="Input" name="input" autocomplete="off"/>
+                        <input type='hidden' name='input-submit'>
                         <datalist id="input">
                             {% for type in types %}
                                 <option value="{{type}}"/>
@@ -33,7 +34,8 @@
                 </div>
                 <div class="col align-self-right text-center">
                     <h1>
-                        <input list="output" class="form-control" placeholder="Output" name="output"/>
+                        <input list="output" class="form-control" placeholder="Output" name="output" autocomplete="off"/>
+                        <input type='hidden' name='output-submit'>
                         <datalist id="output">
 <<<<<<< HEAD
                             {% for type in types %}
@@ -55,6 +57,13 @@
             <h1 class="display-3 text-center">{{ output }}</h1>
         </div>
     </body>
-    <script type="text/javascript">
-    </script>
+
+<script>
+  $('.request').on('submit', function() {
+    $('[name="input-submit"]').val($('[name="input"]').val());
+    $('[name="input"]').val('');
+    $('[name="output-submit"]').val($('[name="output"]').val());
+    $('[name="output"]').val('');
+  });
+</script>
 </html>
