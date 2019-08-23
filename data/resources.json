@@ -1,0 +1,67 @@
+[
+    {
+        "dictonary": 1,
+        "undefined": "email"
+    },
+    {
+        "url": "Redirect List",
+        "dictonary": 2,
+        "undefined": "physical adress"
+    },
+    {
+        "url": "URL",
+        "purpose": "Purpose of site",
+        "registration": "Sign up",
+        "cost": "Fee",
+        "next": "Next steps",
+        "dictonary": 3,
+        "undefined": "online ailias"
+    },
+    {
+        "url": "http://knowem.com/",
+        "purpose": "searches for un on social media, patents, etc. Also sells business and personal identity setups.",
+        "registration": "Yes",
+        "cost": "For the identity creation.",
+        "next": "Create login to see more data? Searched with known user names and seemed accurate.",
+        "input": "[8 ,3] [?]",
+        "dictonary": 4,
+        "undefined": "general information"
+    },
+    {
+        "dictonary": 5,
+        "undefined": "verification"
+    },
+    {
+        "url": "http://www.melissadata.com/lookups/emails.asp",
+        "purpose": "Phone owner and location data, accurate.",
+        "registration": "Yes",
+        "cost": "Two free people searches, then register and fee-based. ",
+        "next": "Log in to see extent of free service?",
+        "input": "[1]",
+        "output": "[4, 5]",
+        "dictonary": 6,
+        "undefined": "IP-adress"
+    },
+    {
+        "dictonary": 7,
+        "undefined": "domain name"
+    },
+    {
+        "dictonary": 8,
+        "undefined": "pysical name"
+    },
+    {
+        "url": "http://verify-email.org/",
+        "purpose": "email verifier ",
+        "registration": "Yes - required to even try",
+        "cost": "fee-based",
+        "input": "[1]",
+        "output": "[5]"
+    },
+    {
+        "url": "http://www.email-validator.net/",
+        "purpose": "email verifier ",
+        "registration": "Yes - required to even try - requires business email",
+        "cost": "fee-based"
+    }
+]
