@@ -3,12 +3,6 @@ import json
 
 app = Flask(__name__,static_url_path='', static_folder='static')
 
-querry_type = {
-    'Address' : 1,
-    'Phone Number' : 2,
-    'Name' : 8
-}
-
 with open('data/resources.json', 'r') as resources:
     data = json.load(resources)
     #add json input
