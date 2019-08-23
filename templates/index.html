@@ -22,8 +22,9 @@
                         
                         <input list="input" class="form-control" placeholder="Input" name="input"/>
                         <datalist id="input">
-                              <option value="Name"/>
-                              <option value="Email"/>
+                            {% for type in types %}
+                                <option value="{{type}}"/>
+                            {% endfor %}
                         </datalist>
                     </h1>
                 </div>
@@ -34,8 +35,9 @@
                     <h1>
                         <input list="output" class="form-control" placeholder="Output" name="output"/>
                         <datalist id="output">
-                            <option value="Adress"/>
-                            <option value="Phone Number"/>
+                            {% for type in types %}
+                                <option value="{{type}}"/>
+                            {% endfor %}
                         </datalist>
                         
                         <!-- Submit Handler -->
