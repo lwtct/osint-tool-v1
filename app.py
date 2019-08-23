@@ -25,10 +25,10 @@ def my_form_post():
         print(1)
 
     # idea; loop over all the resources and look for anything with matching input and output tag.
-    server_output=input_text+output_text #use for debugging, remove later
+    server_output="{} -> {}".format(input_text,output_text) #use for debugging, remove later
     return render_template("index.html", output=server_output)
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def root():
     output = request.args.get("input")
     return render_template("index.html", output=output)
