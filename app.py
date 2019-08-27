@@ -4,6 +4,7 @@ import json
 app = Flask(__name__,static_url_path='', static_folder='static')
 
 def search_database(input_number, output_number):
+    pav_list = []
     with open('resources.json', 'r') as resources:
         data = json.loads(resources.read())
         data_counter = 0
@@ -12,20 +13,31 @@ def search_database(input_number, output_number):
                 if 'url' in str(data[data_counter]):
                     work = str(data[data_counter])
                     work = work.split("', ")
-                    print(work[4],"|", work[5])
-                    if str(input_number) in str(work[4]):
+                    work_counter = 0
+                    for list_item in work:
+                        if 'input' in str(work[work_counter]):
+                            work_input = str(work[work_counter])
+                        if 'output' in str(work[work_counter]):
+                            work_output = str(work[work_counter])
+                        work_counter += 1
+                    if str(input_number) in work_input:
                         input_confirm = 1
-                    if str(output_number) in str(work[5]):
+                    if str(output_number) in work_output:
                         output_confirm = 1
                     if input_confirm == 1 & output_confirm == 1:
-                        return work[0]
+                        pav = str(work[0])
+                        pav = pav.replace("{'url': '", "")
+                        pav_list.append(pav)
                     else:
-                        return 'null'
+                        pass
+                    output_confirm = 0
+                    input_confirm = 0
                 else:
                     pass
             except Exception:
                 pass
             data_counter += 1
+    return pav_list
 
 querry_type = {
     'Address' : 1,
