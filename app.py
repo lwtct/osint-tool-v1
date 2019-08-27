@@ -3,19 +3,6 @@ import json
 
 app = Flask(__name__,static_url_path='', static_folder='static')
 
-# with open('data/resources.json', 'r') as resources:
-#     print (resources)
-#     data = json.loads(resources.read())
-#     print(data)
-#     x = 0
-#     for line in data:
-#         try:
-#          print(data[x])
-#          x += 1
-#         except Exception:
-#             print(1)
-#             pass
-import json
 def search_database(input_number, output_number):
     with open('resources.json', 'r') as resources:
         data = json.loads(resources.read())
@@ -61,14 +48,6 @@ def my_form_post():
 
     output_number = querry_type[output_text]
     input_number = querry_type[input_text]
-    list_count_var = 0
-    # for line in data:
-    #     try:
-    #      if str(output_number) in data:
-    #          print ("yes")
-    #     except Exception:
-    #         pass
-    #     list_count_var += 1
     print(input_number, output_number)
 
     # idea; loop over all the resources and look for anything with matching input and output tag.
