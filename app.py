@@ -3,6 +3,7 @@ import json
 
 app = Flask(__name__,static_url_path='', static_folder='static')
 
+
 def search_database(input_number, output_number):
     pav_list = [] #defines the output list
     with open('resources.json', 'r') as resources: #opens resources.json file under working name 'resources'
