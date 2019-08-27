@@ -3,10 +3,42 @@ import json
 
 app = Flask(__name__,static_url_path='', static_folder='static')
 
-with open('data/resources.json', 'r') as resources:
-    data = json.load(resources)
-    #add json input
-
+# with open('data/resources.json', 'r') as resources:
+#     print (resources)
+#     data = json.loads(resources.read())
+#     print(data)
+#     x = 0
+#     for line in data:
+#         try:
+#          print(data[x])
+#          x += 1
+#         except Exception:
+#             print(1)
+#             pass
+import json
+def search_database(input_number, output_number):
+    with open('resources.json', 'r') as resources:
+        data = json.loads(resources.read())
+        data_counter = 0
+        for line in data:
+            try:
+                if 'url' in str(data[data_counter]):
+                    work = str(data[data_counter])
+                    work = work.split("', ")
+                    print(work[4],"|", work[5])
+                    if str(input_number) in str(work[4]):
+                        input_confirm = 1
+                    if str(output_number) in str(work[5]):
+                        output_confirm = 1
+                    if input_confirm == 1 & output_confirm == 1:
+                        return work[0]
+                    else:
+                        return 'null'
+                else:
+                    pass
+            except Exception:
+                pass
+            data_counter += 1
 
 querry_type = {
     'Address' : 1,
@@ -26,10 +58,17 @@ def my_form_post():
         output = "Invalid Arguments"
         return render_template("index.jinja", types=querry_type.keys(), output=output)
 
-    # ab115c34017f5fd862bb144cd6b36fd7f830bd29
+
     output_number = querry_type[output_text]
     input_number = querry_type[input_text]
-
+    list_count_var = 0
+    # for line in data:
+    #     try:
+    #      if str(output_number) in data:
+    #          print ("yes")
+    #     except Exception:
+    #         pass
+    #     list_count_var += 1
     print(input_number, output_number)
 
     # idea; loop over all the resources and look for anything with matching input and output tag.
