@@ -2,7 +2,6 @@ in using this application you agree that you do not represent or act on behaf of
 also... dark magic doesnt exist. Those who claim they got information off the darkweb with dark magic are playing coy and should be regarded as such.
 
 Now for the serious stuff:
-
 tl;dr Don't be stupid and stalk people. Be nice.
 
 DISCLAIMER While performing OSINT is legal, using the OSINT tools and techniques outlined in this website are intended to be used in conjunction with sanctioned Red Team activities
