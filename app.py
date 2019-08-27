@@ -29,18 +29,12 @@ def search_database(input_number, output_number):
                         if list_item_check_output == 1 & list_item_check_input == 1: #if both the input and output location are found there is no reason to continue checking
                             pass
                         work_counter += 1 #updates the current entry of list work
-                    if str(input_number) in work_input: #check if the active entry has the nessasary input clasification
-                        input_confirm = 1
-                    if str(output_number) in work_output: #check if the active entry has the nessasary output clasification
-                        output_confirm = 1
-                    if input_confirm == 1 & output_confirm == 1: #check if the active entry has the nessasry input and output clasification
+                    if str(input_number) in work_input & str(output_number) in work_output: #check if the active entry has the nessasry input and output clasification
                         pav = str(work[0])  #variable name Pyro57#6998. Feel free to annoy him on discord even though he did next to nothing with the developement of this application.
                         pav = pav.replace("{'url': '", "") #removes the unnessasary part and just leaves the url
                         pav_list.append(pav) #adds the url to the string
                     else:
                         pass
-                    output_confirm = 0 #resets variables
-                    input_confirm = 0
                 else:
                     pass
             except Exception:     #deals with the errors
