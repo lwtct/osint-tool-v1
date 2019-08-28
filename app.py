@@ -6,7 +6,7 @@ app = Flask(__name__,static_url_path='', static_folder='static')
 
 def search_database(input_number, output_number):
     pav_list = [] #defines the output list
-    with open('resources.json', 'r') as resources: #opens resources.json file under working name 'resources'
+    with open('data/resources.json', 'r') as resources: #opens resources.json file under working name 'resources'
         data = json.loads(resources.read()) #dumps the JSON data into a list
         data_counter = 0 #resets the variable
         for line in data: #iterates over each entry of list 'data'
@@ -29,7 +29,7 @@ def search_database(input_number, output_number):
                         if list_item_check_output == 1 & list_item_check_input == 1: #if both the input and output location are found there is no reason to continue checking
                             pass
                         work_counter += 1 #updates the current entry of list work
-                    if str(input_number) in work_input & str(output_number) in work_output: #check if the active entry has the necessary input and output classification
+                    if str(input_number) in work_input and str(output_number) in work_output: #check if the active entry has the necessary input and output classification
                         pav = str(work[0])  #variable name from Pyro57#6998. Feel free to annoy him on discord even though he did next to nothing with the development of this application.
                         pav = pav.replace("{'url': '", "") #removes the unnecessary part and just leaves the URL
                         pav_list.append(pav) #adds the URL to the string
@@ -58,16 +58,17 @@ def my_form_post():
     input_text = request.form['input']
     if output_text not in querry_type.keys() or input_text not in querry_type.keys():
         output = "Invalid Arguments"
-        return render_template("index.jinja", types=querry_type.keys(), output=output)
+        return render_template("index.jinja", types=querry_type.keys(), output=output, search_output='')
 
 
     output_number = querry_type[output_text]
     input_number = querry_type[input_text]
     print(input_number, output_number)
-
+    search_output = search_database(input_number, output_number)
+    print(search_output)
     # idea; loop over all the resources and look for anything with matching input and output tag.
     server_output="{} -> {}".format(input_text,output_text) #use for debugging, remove later
-    return render_template("index.jinja", types=querry_type.keys(), output=server_output)
+    return render_template("index.jinja", types=querry_type.keys(), output=server_output, search_output=search_output)
 
 @app.route("/", methods=['GET'])
 def root():
