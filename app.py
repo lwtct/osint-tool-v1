@@ -6,7 +6,7 @@ app = Flask(__name__,static_url_path='', static_folder='static')
 
 def search_database(input_number, output_number):
     pav_list = [] #defines the output list
-    with open('data/resources.json', 'r') as resources: #opens resources.json file under working name 'resources'
+    with open('data/resources.json', 'r') as resources: #opens the json file under working name 'resources'
         data = json.loads(resources.read()) #dumps the JSON data into a list
         data_counter = 0 #resets the variable
         for line in data: #iterates over each entry of list 'data'
@@ -43,13 +43,15 @@ def search_database(input_number, output_number):
     return pav_list #when completed this returns a list of all URLs with the correct classification
 
 querry_type = {
-    'Address' : 1,
-    'Phone Number' : 2,
-    'online alias' : 3,
+    'Email' : 1,
+    'Home address' : 2,
+    'Online alias' : 3,
     'general information' : 4,
     'verification' : 5,
     'IP adress' : 6,
-    'Name' : 8
+    'domain name' : 7,
+    'Name' : 8,
+    'Phone number' : 9
 }
 
 @app.route('/', methods=['POST'])
