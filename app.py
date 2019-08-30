@@ -44,7 +44,7 @@ def search_database(input_number, output_number):
                         pav_list.append(pav)  # adds the URL to the output list
                         dom_list.append(urlparse(pav).netloc.replace("www.","").split(".")[0].capitalize())
                         des = purpose
-                        des = des.replace("'purpose': '", "")  # removes unnecessary part and just leaves the description
+                        des = des.replace("'purpose': '", "").capitalize()  # removes unnecessary part and just leaves the description
                         des_list.append(des)  # adds the description to the output list
                     else:
                         pass
