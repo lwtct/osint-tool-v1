@@ -1,0 +1,13 @@
+in using this application you agree that you do not represent or act on behalf of the community known as The Many Hats Club and have no problems with sharing techniques and resources with others.
+also... dark magic doesn't exist. Those who claim they got information off the dark web with dark magic are playing coy and should be regarded as such.
+
+Now for the serious stuff:
+tl;dr Don't be stupid and stalk people. Be nice.
+
+DISCLAIMER While performing OSINT is legal, using the OSINT tools and techniques outlined in this website are intended to be used in conjunction with sanctioned Red Team activities
+as part of a contracted service with the permission of the target. When conducting any form of security testing, [IWTCT] strongly suggests only engaging in activities, including basic scope and OSINT,
+after securing a fully-executed engagement contract. Best practices may vary per jurisdiction, however, at a minimum, this contract should outline exactly what the target is, what you are permitted to
+attempt to do, and when, along with acceptance criteria and remuneration. Do not take this lightly. The laws are changing rapidly, and the best way to prevent fines and/or imprisonment,
+as well as to protect your future ability to perform such work, is to make sure you are providing a contracted service.
+
+
