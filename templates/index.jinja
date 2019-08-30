@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        
         <title>Home</title>
     </head>
     <body>
@@ -16,7 +18,7 @@
                 </div>
             </div>
             <form method="POST" name="request">
-            <div class="row">
+            <div class="row" style="margin-top:50px">
                 <div class="col align-self-left text-center">
                     <h1>
                         
@@ -49,7 +51,18 @@
                 </div>
             </div>
             </form>
-            <h1 class="display-3 text-center">{{ output }}</h1>
+            <div class="container">
+                <ul class="list-group" style="margin-top:50px">
+                    {% for x in range(list_link|length) %}
+                    <li class="panel-heading{{x}} list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <a href="{{list_link[x]}}">{{list_link[x]}}</a>
+                        <div style="display:none" class="panel-collapse{{x}}" id="collapseExample">
+                                <h1>Bonjour<h1>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </body>
 
@@ -61,4 +74,21 @@
     $('[name="output"]').val('');
   });
 </script>
+     <script>
+        {% for x in range(list_link|length) %}
+            $(document).ready(function(){
+                
+                $(".panel-heading{{x}}").mouseenter(function () {
+                    $(".panel-collapse{{x}}").fadeIn();
+                });
+                $(".panel-collapse{{x}}").mouseleave(function(){
+                    $(".panel-collapse{{x}}").fadeOut();
+                });
+                $(".panel-heading{{x}}").mouseleave(function () {
+                    $(".panel-collapse{{x}}").fadeOut();
+                });
+            });
+        {% endfor %}
+        </script>   
+
 </html>
