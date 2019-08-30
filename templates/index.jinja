@@ -53,11 +53,11 @@
             </form>
             <div class="container">
                 <ul class="list-group" style="margin-top:50px">
-                    {% for x in range(list_link|length) %}
+                    {% for x in range(link_list|length) %}
                     <li class="panel-heading{{x}} list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        <a href="{{list_link[x]}}">{{list_link[x]}}</a>
-                        <div style="display:none" class="panel-collapse{{x}}" id="collapseExample">
-                                <h1>Bonjour<h1>
+                        <a class="panel-heading{{x}}" href="{{link_list[x]}}"><h1>{{domain_list[x]}}<h1></a>
+                        <div style="display:none" class="panel-heading{{x}} panel-collapse{{x}}" id="collapseExample">
+                                <h3 class="panel-heading{{x}}">{{desc_list[x]}}<h3>
                         </div>
                     </li>
                     {% endfor %}
@@ -75,17 +75,19 @@
   });
 </script>
      <script>
-        {% for x in range(list_link|length) %}
+        {% for x in range(link_list|length) %}
             $(document).ready(function(){
-                
+                var a = setTimeout(function(){}, 1000);
                 $(".panel-heading{{x}}").mouseenter(function () {
+                    clearTimeout(a);
                     $(".panel-collapse{{x}}").fadeIn();
-                });
-                $(".panel-collapse{{x}}").mouseleave(function(){
-                    $(".panel-collapse{{x}}").fadeOut();
+                    a = setTimeout(function(){}, 1000);
                 });
                 $(".panel-heading{{x}}").mouseleave(function () {
-                    $(".panel-collapse{{x}}").fadeOut();
+                    a = setTimeout(function(){
+                     $(".panel-collapse{{x}}").fadeOut();
+                    }, 500);
+                    
                 });
             });
         {% endfor %}

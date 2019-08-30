@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from urllib.parse import urlparse
 import json
 
 app = Flask(__name__,static_url_path='', static_folder='static')
@@ -7,6 +8,7 @@ app = Flask(__name__,static_url_path='', static_folder='static')
 def search_database(input_number, output_number):
     pav_list = []  # defines the URL output list
     des_list = []  # defines the discription output list
+    dom_list = []  # defines the domains of URL list
     with open('data/resources.json', 'r') as resources:  # opens the json file under working name 'resources'
         data = json.loads(resources.read())  # dumps the JSON data into a list
         data_counter = 0  # resets the variable
@@ -40,6 +42,7 @@ def search_database(input_number, output_number):
                         pav = url  # variable name from Pyro57#6998. Feel free to annoy him on discord even though he did next to nothing with the development of this application.
                         pav = pav.replace("{'url': '", "")  # removes the unnecessary part and just leaves the URL
                         pav_list.append(pav)  # adds the URL to the output list
+                        dom_list.append(urlparse(pav).netloc.replace("www.","").split(".")[0].capitalize())
                         des = purpose
                         des = des.replace("'purpose': '", "")  # removes unnecessary part and just leaves the description
                         des_list.append(des)  # adds the description to the output list
@@ -50,9 +53,8 @@ def search_database(input_number, output_number):
             except Exception:  # deals with the errors
                 pass
             data_counter += 1  # moves on to next entry in list 'data'
-    return pav_list, des_list  # when completed this returns a list of all URLs and description with the correct classification
+    return pav_list, des_list, dom_list # when completed this returns a list of all URLs and description with the correct classification
 
-print (search_database(1, 5))
 querry_type = {
     'Email' : 1,
     'Home address' : 2,
@@ -77,11 +79,10 @@ def my_form_post():
     output_number = querry_type[output_text]
     input_number = querry_type[input_text]
     print(input_number, output_number)
-    search_output = search_database(input_number, output_number)
-    print(search_output)
+    link_list, desc_list, domain_list = search_database(input_number, output_number)
     # idea; loop over all the resources and look for anything with matching input and output tag.
     server_output="{} -> {}".format(input_text,output_text) #use for debugging, remove later
-    return render_template("index.jinja", types=querry_type.keys(), output=server_output, search_output=search_output)
+    return render_template("index.jinja", types=querry_type.keys(), output=server_output, domain_list=domain_list, link_list=link_list, desc_list=desc_list)
 
 @app.route("/", methods=['GET'])
 def root():
