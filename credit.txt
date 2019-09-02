@@ -5,7 +5,7 @@ Estym#1759
 Dusty#6551
 delta#6862
 
-Sources of data used by this tool:
+Partial sources of data used by this tool:
 osintframework.com
 
 Dependancies used in this application:
