@@ -1,0 +1,11 @@
+The following people, entities or websites have contributed or been sources in the creation of this tool;
+
+Creation, coding, sorting and classification of application and the data it uses:
+Estym#1759
+Dusty#6551
+delta#6862
+
+Sources of data used by this tool:
+osintframework.com
+
+Dependancies used in this application:

@@ -61,7 +61,1333 @@
     {
         "url": "http://www.email-validator.net/",
         "purpose": "email verifier ",
-        "registration": "Yes - required to even try - requires business email",
+        "registration": "Yes - required to even try - requires \"business\" email",
         "cost": "fee-based"
+    },
+    {
+        "url": "http://www.tcpiputils.com/dns-blackhole-list",
+        "purpose": "DNS lookup - firefox add on",
+        "registration": "Yes - can only access your own data and search by IPs against \"known\" scam IPs for free, all else is fee based",
+        "cost": "$$$",
+        "input": "[6]"
+    },
+    {
+        "url": "http://mxtoolbox.com/",
+        "purpose": "Good information for free and without registration. Combination \"is it down or just me\" and DNSlookup. Good site.",
+        "registration": "Yes, optional",
+        "cost": "optional",
+        "next": "Register might be worth it.",
+        "input": "[7]",
+        "output": "[4]"
+    },
+    {
+        "url": "http://domainbigdata.com/",
+        "purpose": "IP, date of registration",
+        "registration": "Not that I saw",
+        "cost": "free",
+        "next": "free",
+        "input": "[7]",
+        "output": "[4]"
+    },
+    {
+        "url": "https://tools.dnsstuff.com",
+        "purpose": "DNS stuff, various tools",
+        "registration": "Yes",
+        "cost": "free trials",
+        "output": "[4]"
+    },
+    {
+        "url": "http://website.informer.com/",
+        "purpose": "Same WhoIs data as others - redundant but free"
+    },
+    {
+        "url": "http://www.dailychanges.com/",
+        "purpose": "good basic info",
+        "registration": "captcha ",
+        "input": "[7]",
+        "output": "[4]"
+    },
+    {
+        "url": "https://github.com/RandomStorm/Bluto"
+    },
+    {
+        "url": "http://www.urlvoid.com/",
+        "purpose": "Good site",
+        "next": "deeper look warranted",
+        "input": "[7]",
+        "output": "[4]"
+    },
+    {
+        "url": "http://fortiguard.com/iprep",
+        "purpose": "real time threat data",
+        "registration": "revisit"
+    },
+    {
+        "url": "http://www.trustedsource.org/",
+        "purpose": "legit site or not"
+    },
+    {
+        "url": "https://sitereview.bluecoat.com/sitereview.jsp",
+        "purpose": "dispute of determing legitimacy of site"
+    },
+    {
+        "url": "http://zulu.zscaler.com/",
+        "purpose": "legit site or not"
+    },
+    {
+        "url": "https://www.url-analyzer.net/",
+        "purpose": "scans sites and files for malware, etc",
+        "registration": "revsit"
+    },
+    {
+        "url": "http://www.senderbase.org/",
+        "purpose": "dupe? cisco threat detection"
+    },
+    {
+        "url": "http://www.avgthreatlabs.com/ww-en/website-safety-reports/",
+        "purpose": "shut down their security tools"
+    },
+    {
+        "url": "http://www.brightcloud.com/tools/url-ip-lookup.php",
+        "purpose": "legit site or not",
+        "registration": "captcha"
+    },
+    {
+        "url": "http://app.webinspector.com/",
+        "purpose": "legit site or not"
+    },
+    {
+        "url": "http://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt",
+        "purpose": "list of ransomware sites"
+    },
+    {
+        "url": "http://www.networksec.org/grabbho/block.txt",
+        "purpose": "dead site since apx 2009???"
+    },
+    {
+        "url": "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist",
+        "purpose": "# ZeuS Tracker has been discontinued on Jul 8th, 2019"
+    },
+    {
+        "url": "http://www.malware.com.br/open-source.shtml",
+        "purpose": "dupe"
+    },
+    {
+        "url": "http://www.malwareurl.com/index.php",
+        "purpose": "verify website",
+        "registration": "captcha, revisit"
+    },
+    {
+        "url": "https://zeustracker.abuse.ch/blocklist.php",
+        "purpose": "dupe"
+    },
+    {
+        "url": "http://www.shadowserver.org/wiki/pmwiki.php?n=Services/Reports",
+        "purpose": "worldwide threat detector fee and free not OSINT"
+    },
+    {
+        "url": "http://builtwith.com/",
+        "purpose": "website data",
+        "registration": "revisit"
+    },
+    {
+        "url": "http://toolbar.netcraft.com/site_report?url=undefined#last_reboot",
+        "purpose": "website data"
+    },
+    {
+        "url": "http://www.statscrop.com/",
+        "purpose": "website data"
+    },
+    {
+        "url": "https://moz.com/researchtools/ose/",
+        "purpose": "website data",
+        "registration": "requires registration"
+    },
+    {
+        "url": "https://securityheaders.io/",
+        "purpose": "slightly misleading website data",
+        "registration": "selling their tool by scaring you"
+    },
+    {
+        "url": "http://www.alexa.com/siteinfo",
+        "purpose": "website data"
+    },
+    {
+        "url": "http://www.alexa.com/topsites",
+        "purpose": "website data"
+    },
+    {
+        "url": "https://w3dt.net/",
+        "purpose": "website data",
+        "registration": "revisit -- good collection of tools"
+    },
+    {
+        "url": "http://urlex.org/",
+        "purpose": "??"
+    },
+    {
+        "url": "http://www.knowurl.com/",
+        "purpose": "MIA"
+    },
+    {
+        "url": "http://visualping.io/"
+    },
+    {
+        "url": "https://www.google.com/trends/"
+    },
+    {
+        "url": "http://dnssec-debugger.verisignlabs.com/"
+    },
+    {
+        "url": "https://portswigger.net/burp/"
+    },
+    {
+        "url": "http://www.softpedia.com/get/Internet/Other-Internet-Related/IntelliTamper.shtml"
+    },
+    {
+        "url": "http://mct.verisign-grs.com/"
+    },
+    {
+        "url": "https://github.com/ChrisTruncer/EyeWitness"
+    },
+    {
+        "url": "http://www.ip2location.com/demo.aspx"
+    },
+    {
+        "url": "http://www.ipfingerprints.com/",
+        "purpose": "IP:address"
+    },
+    {
+        "url": "http://www.infosniper.net/",
+        "purpose": "fee-based, cheesy ad-laden site skip"
+    },
+    {
+        "url": "http://internetcensus2012.bitbucket.org/paper.html",
+        "purpose": "home page for Atlassian?"
+    },
+    {
+        "url": "http://bgpranking.circl.lu/"
+    },
+    {
+        "url": "http://www.bgp4.as/tools",
+        "purpose": "??"
+    },
+    {
+        "url": "http://www.ipvoid.com/",
+        "purpose": "data from an IP"
+    },
+    {
+        "url": "https://exonerator.torproject.org/"
+    },
+    {
+        "url": "http://www.projecthoneypot.org/list_of_ips.php"
+    },
+    {
+        "url": "http://www.ipfingerprints.com/reverseip.php"
+    },
+    {
+        "url": "http://www.tcpiputils.com/domain-neighbors"
+    },
+    {
+        "url": "http://www.packettotal.com/"
+    },
+    {
+        "url": "https://iplogger.com/"
+    },
+    {
+        "url": "http://www.bing.com/images",
+        "purpose": "reverse image"
+    },
+    {
+        "url": "http://images.yahoo.com/",
+        "purpose": "reverse image"
+    },
+    {
+        "url": "http://tineye.com/",
+        "purpose": "reverse image exif data"
+    },
+    {
+        "url": "http://shitu.baidu.com/"
+    },
+    {
+        "url": "http://photobucket.com/"
+    },
+    {
+        "url": "http://www.picsearch.com/"
+    },
+    {
+        "url": "http://7photos.net/"
+    },
+    {
+        "url": "http://current-location.com/"
+    },
+    {
+        "url": "http://camfindapp.com/"
+    },
+    {
+        "url": "http://mininsta.net/"
+    },
+    {
+        "url": "http://idgettr.com/"
+    },
+    {
+        "url": "http://www.sno.phy.queensu.ca/~phil/exiftool/"
+    },
+    {
+        "url": "http://exif.regex.info/"
+    },
+    {
+        "url": "http://www.exif-search.com/"
+    },
+    {
+        "url": "http://www.impulseadventure.com/photo/jpeg-snoop.html"
+    },
+    {
+        "url": "http://www.geosetter.de/en/"
+    },
+    {
+        "url": "http://www.stolencamerafinder.co.uk/"
+    },
+    {
+        "url": "http://www.free-ocr.com/"
+    },
+    {
+        "url": "http://www.onlineocr.net/"
+    },
+    {
+        "url": "http://www.bing.com/videos"
+    },
+    {
+        "url": "http://www.dogpile.com/",
+        "purpose": "search"
+    },
+    {
+        "url": "http://www.blinkx.com/"
+    },
+    {
+        "url": "https://www.facebook.com/livemap#"
+    },
+    {
+        "url": "http://www.metatube.com/"
+    },
+    {
+        "url": "http://video.search.yahoo.com/",
+        "purpose": "Yahoo search engine why?"
+    },
+    {
+        "url": "http://www.labnol.org/internet/print-youtube-video/28217/"
+    },
+    {
+        "url": "http://www.amnestyusa.org/citizenevidence/",
+        "purpose": "Relevance? YouTube data viewer, all that you can see on the YouTube page. Prevent tracking?"
+    },
+    {
+        "url": "http://insecam.org/",
+        "purpose": "Very generalized cameras, too few to be useful"
+    },
+    {
+        "url": "http://www.earthcam.com/",
+        "purpose": "live cams to scare anyone"
+    },
+    {
+        "url": "http://www.docjax.com/",
+        "purpose": "not useful or accurate. DB offline?"
+    },
+    {
+        "url": "http://archive.recapthelaw.org/",
+        "purpose": "Federal court documentation"
+    },
+    {
+        "url": "http://filessoo.com/",
+        "purpose": "blocked by firewall"
+    },
+    {
+        "url": "http://andrewmohawk.com/pasteLert/",
+        "purpose": "track pastebin entries in real time, cannot verify accuracy"
+    },
+    {
+        "url": "http://findmyfbid.com/",
+        "purpose": "FB data"
+    },
+    {
+        "url": "https://www.facebook.com/livemap#"
+    },
+    {
+        "url": "http://stalkscan.com/en/",
+        "purpose": "more FB data - revisit"
+    },
+    {
+        "url": "http://www.conweets.com/",
+        "purpose": "invalid link"
+    },
+    {
+        "url": "https://www.twellow.com/splash/",
+        "purpose": "site for how to get popular on social media"
+    },
+    {
+        "url": "https://moz.com/followerwonk/bio/?q=zero%20day&l=us",
+        "purpose": "revisit - good for finding social media accounts"
+    },
+    {
+        "url": "http://twopcharts.com/"
+    },
+    {
+        "url": "http://tweepsect.com/"
+    },
+    {
+        "url": "https://moz.com/followerwonk/analyze"
+    },
+    {
+        "url": "https://moz.com/followerwonk/compare"
+    },
+    {
+        "url": "http://fakers.statuspeople.com/",
+        "purpose": "fake followers, however it figures that out"
+    },
+    {
+        "url": "http://klear.com/",
+        "purpose": "become an \"influencer\" for $$$"
+    },
+    {
+        "url": "https://discover.twitter.com/first-tweet",
+        "purpose": "applet for agregate twitter data, probably for a fee"
+    },
+    {
+        "url": "http://tweettunnel.info/firstpre.php",
+        "purpose": "redirects to a used car place??"
+    },
+    {
+        "url": "http://mentionmapp.com/",
+        "purpose": "twitter visualization for fee can't even search without registration"
+    },
+    {
+        "url": "http:",
+        "purpose": "more agregate twitter info, one click asks for $"
+    },
+    {
+        "url": "http://tinfoleak.com/",
+        "purpose": "twitter account info"
+    },
+    {
+        "url": "http://app.teachingprivacy.com/",
+        "purpose": "redirects to Nord VPN"
+    },
+    {
+        "url": "https://app.echosec.net/",
+        "purpose": "goes straight to an application login?"
+    },
+    {
+        "url": "http://mapd.csail.mit.edu/tweetmap/",
+        "purpose": "tweetmap"
+    },
+    {
+        "url": "http://onemilliontweetmap.com/",
+        "purpose": "intresting map of tweets live data"
+    },
+    {
+        "url": "https://www.mapd.com/demos/tweetmap/",
+        "purpose": "tweetmap"
+    },
+    {
+        "url": "https://plus.google.com/",
+        "purpose": "Obselete, no longer exists"
+    },
+    {
+        "url": "https://plus.google.com/+Username/posts",
+        "purpose": "Obselete, no longer exists"
+    },
+    {
+        "url": "http://snoopsnoo.com/",
+        "purpose": "App errors out"
+    },
+    {
+        "url": "http://redditmetrics.com/",
+        "purpose": "Reddit trending"
+    },
+    {
+        "url": "https://github.com/vysec/LinkedInt"
+    },
+    {
+        "url": "http://thehoodup.com/board/",
+        "purpose": "straight to sticky ad site"
+    },
+    {
+        "url": "http://www.blackplanet.com/user_search/index.html",
+        "purpose": "not clickin' on that"
+    },
+    {
+        "url": "http://www.migente.com/user_search/index.html"
+    },
+    {
+        "url": "http://www.asianave.com/user_search/index.html"
+    },
+    {
+        "url": "http://www.social-searcher.com/",
+        "purpose": "Good general search website",
+        "registration": "no",
+        "cost": "free",
+        "input": "name, location",
+        "output": "surprising. Crawls various websites. Not superior to google, but an easier layout"
+    },
+    {
+        "url": "http://www.perisearch.net/",
+        "purpose": "periscope feeds"
+    },
+    {
+        "url": "http://socialblade.com/",
+        "purpose": "accurately finds social media based on un, must be precise"
+    },
+    {
+        "url": "http://pingroupie.com/"
+    },
+    {
+        "url": "https://web.skype.com/"
+    },
+    {
+        "url": "http://skypegrab.net/oldip.php"
+    },
+    {
+        "url": "http://www.skypeipresolver.net/"
+    },
+    {
+        "url": "https://lastpass.com/snapchat/"
+    },
+    {
+        "url": "http://www.spokeo.com/"
+    },
+    {
+        "url": "http://www.zoominfo.com/people_directory/professional_profile/A-0-1"
+    },
+    {
+        "url": "http://www.zabasearch.com/"
+    },
+    {
+        "url": "http://www.ussearch.com/"
+    },
+    {
+        "url": "http://www.melissadata.com/lookups/peoplefinder.asp"
+    },
+    {
+        "url": "http://www.peekyou.com/"
+    },
+    {
+        "url": "http://www.peepdb.com/"
+    },
+    {
+        "url": "http://www.reversegenie.com/people.php"
+    },
+    {
+        "url": "http://radaris.com/"
+    },
+    {
+        "url": "http://www.intelius.com/"
+    },
+    {
+        "url": "http://waatp.com/",
+        "purpose": "virus filter"
+    },
+    {
+        "url": "http://search.findmypast.com/search-world-records",
+        "purpose": "Forced FB sign in"
+    },
+    {
+        "url": "https://familysearch.org/search/",
+        "purpose": "fee-based geneaological research"
+    },
+    {
+        "url": "http://search.ancestry.com/",
+        "purpose": "fee-based geneaological research"
+    },
+    {
+        "url": "http://www.searchbug.com/#pageTop",
+        "purpose": "Good for validating name and address data - the rest is fee based"
+    },
+    {
+        "url": "http://www.genealogy.com/",
+        "purpose": "feebased geneaological research"
+    },
+    {
+        "url": "http://www.newultimates.com/",
+        "purpose": "Doesn't make it past the first virus filter skip"
+    },
+    {
+        "url": "http://www.lookup.com/",
+        "purpose": "Doesn't make it past the first virus filter skip"
+    },
+    {
+        "url": "http://www.anywho.com/whitepages",
+        "purpose": "inaccurate"
+    },
+    {
+        "url": "http://www.addresses.com/",
+        "purpose": "mostly accurate, some old data"
+    },
+    {
+        "url": "https://speedyhunt.com/",
+        "purpose": "unreachable"
+    },
+    {
+        "url": "https://www.registryfinder.com/",
+        "purpose": "possible birth/graduation dates for people that have asked for specific gifts online"
+    },
+    {
+        "url": "https://www.bedbathandbeyond.com/store/giftregistry/registry_search_guest.jsp",
+        "purpose": "wedding/gift registry site"
+    },
+    {
+        "url": "http://www.match.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "https://www.ayi.com/index.php",
+        "purpose": "more dating site"
+    },
+    {
+        "url": "http://www.pof.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "http://www.eharmony.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "http://www.farmersonly.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "http://wamba.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "http://adultfriendfinder.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "http://www.meetup.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "http://www.blackpeoplemeet.com/",
+        "purpose": "dating site"
+    },
+    {
+        "url": "http://www.calleridtest.com/",
+        "purpose": "Accurate caller ID, only 5 tries though"
+    },
+    {
+        "url": "http://www.truecaller.com/",
+        "purpose": "reverse directory",
+        "registration": "required",
+        "cost": "?"
+    },
+    {
+        "url": "http://www.spydialer.com/default.aspx",
+        "purpose": "reverse directory, accurate",
+        "registration": "annoying captchas, lots of ads"
+    },
+    {
+        "url": "http://www.phonevalidator.com/",
+        "purpose": "cell versus land line; redundant"
+    },
+    {
+        "url": "http://freecarrierlookup.com/",
+        "purpose": "accurate number:carrier data"
+    },
+    {
+        "url": "https://www.data24-7.com/signup.php",
+        "purpose": "hard sell for. . .something"
+    },
+    {
+        "url": "https://bhattsameer.github.io/numspy"
+    },
+    {
+        "url": "http://www.melissadata.com/lookups/propertyviewer.asp",
+        "purpose": "fee-based seemingly basic searches"
+    },
+    {
+        "url": "http://www.zillow.com/",
+        "purpose": "property"
+    },
+    {
+        "url": "http://www.blackbookonline.info/USA-County-Court-Records.aspx",
+        "purpose": "bad site heavy on ads and looks sketchy"
+    },
+    {
+        "url": "http://www.canlii.org/en/",
+        "purpose": "Canadian law"
+    },
+    {
+        "url": "http://www.blackbookonline.info/criminalsearch.aspx",
+        "purpose": "bad site heavy on ads and looks sketchy"
+    },
+    {
+        "url": "http://www.familywatchdog.us/",
+        "purpose": "sex offender registry"
+    },
+    {
+        "url": "http://www.criminalsearches.com/",
+        "purpose": "People finder fee based"
+    },
+    {
+        "url": "https://www.nsopw.gov/en/Search",
+        "purpose": "DOJ "
+    },
+    {
+        "url": "http://mugshots.com/",
+        "purpose": "Mostly a news website about sex offenders, ad-heavy"
+    },
+    {
+        "url": "http://www.binbase.com/search.html",
+        "purpose": "Credit card validation site - legal?"
+    },
+    {
+        "url": "http://publicrecords.netronline.com/",
+        "purpose": "Ads, misleading sections of website, google maps gives better data for free"
+    },
+    {
+        "url": "http://www.melissadata.com/lookups/deathcheck.asp",
+        "purpose": "recent SSDI search (social security death index)"
+    },
+    {
+        "url": "http://www.findagrave.com/index.html",
+        "purpose": "Gravesites throughout the world"
+    },
+    {
+        "url": "http://www.blackbookonline.info/USA-Voter-Records.aspx",
+        "purpose": "broken links within the site questionable use"
+    },
+    {
+        "url": "https://www.google.com/advanced_patent_search"
+    },
+    {
+        "url": "http://www.followthemoney.org/"
+    },
+    {
+        "url": "http://www.politicalmoneyline.com/"
+    },
+    {
+        "url": "http://www.melissadata.com/lookups/fec.asp",
+        "purpose": "duplicate firm that sells data cleaning"
+    },
+    {
+        "url": "http://www.fec.gov/finance/disclosure/norindsea.shtml"
+    },
+    {
+        "url": "http://enigma.io/publicdata/",
+        "purpose": "interesting list of public business and government data"
+    },
+    {
+        "url": "http://datacatalog.worldbank.org/",
+        "purpose": "corporate data"
+    },
+    {
+        "url": "http://www.reportlinker.com/",
+        "purpose": "corporate data"
+    },
+    {
+        "url": "http://theinvestormailinglist.com/recent-reports/"
+    },
+    {
+        "url": "http://investing.businessweek.com/research/common/symbollookup/symbollookup.asp"
+    },
+    {
+        "url": "http://www.corporationwiki.com/"
+    },
+    {
+        "url": "http://www.commercial-register.sg.ch/home/worldwide.html"
+    },
+    {
+        "url": "http://www.sec.gov/edgar.shtml"
+    },
+    {
+        "url": "http://globaledge.msu.edu/global-resources"
+    },
+    {
+        "url": "https://www.google.com/finance",
+        "purpose": "corporate data"
+    },
+    {
+        "url": "https://connect.data.com/"
+    },
+    {
+        "url": "http://www.zoominfo.com/company-directory/us"
+    },
+    {
+        "url": "http://www.infobel.com/en/world/"
+    },
+    {
+        "url": "http://mintbusinessinfo.com/version-2015129/portal.serv?product=mintportal"
+    },
+    {
+        "url": "http://www.manta.com/business",
+        "purpose": "Advertising small businesses - good for finding artists, sole practitioners "
+    },
+    {
+        "url": "http://littlesis.org/",
+        "purpose": "Revisit -- following the money and the influence with a conspiratorial edge"
+    },
+    {
+        "url": "http://corporateinformation.com/",
+        "purpose": "not useful, sells canned reports"
+    },
+    {
+        "url": "http://www.europages.co.uk/",
+        "purpose": "EU-specific business interests - google is probably better"
+    },
+    {
+        "url": "http://www.vault.com/",
+        "purpose": "business info but not the best source"
+    },
+    {
+        "url": "http://manta.com/business",
+        "purpose": "business info but not the best source"
+    },
+    {
+        "url": "http://recruitin.net/",
+        "purpose": "jobs"
+    },
+    {
+        "url": "http://www.jobster.com/",
+        "purpose": "jobs"
+    },
+    {
+        "url": "http://www.indeed.com/",
+        "purpose": "jobs"
+    },
+    {
+        "url": "http://www.cvgadget.com/",
+        "purpose": "not useful, google is better"
+    },
+    {
+        "url": "http://www.vindecoderz.com/",
+        "purpose": "VIN:Vehicle database"
+    },
+    {
+        "url": "https://www.nicb.org/theft_and_fraud_awareness/vincheck",
+        "purpose": "VIN:Vehicle database"
+    },
+    {
+        "url": "http://tracker.geops.ch/",
+        "purpose": "Traffic. Inaccurate for USA, but could be ok for Zurich."
+    },
+    {
+        "url": "http://flightaware.com/live/",
+        "purpose": "Current flghts for air traffic use"
+    },
+    {
+        "url": "http://www.marinetraffic.com/",
+        "purpose": "shipping lanes/maps"
+    },
+    {
+        "url": "http://www.vesseltracker.com/app",
+        "purpose": "shipping lanes/maps"
+    },
+    {
+        "url": "http://www.openseamap.org",
+        "purpose": "shipping lanes/maps"
+    },
+    {
+        "url": "http://data.deutschebahn.com/",
+        "purpose": "in german revisit"
+    },
+    {
+        "url": "http://www.n2yo.com/",
+        "purpose": "tracks the ISS"
+    },
+    {
+        "url": "http://www.track-trace.com/",
+        "purpose": "tracks packages"
+    },
+    {
+        "url": "http://www.gpsvisualizer.com/geocode",
+        "purpose": "Out of date street view -- perhaps more coverage than Google but otherwise redundant"
+    },
+    {
+        "url": "http://labs.teehanlax.com/project/hyperlapse",
+        "purpose": "inactive link"
+    },
+    {
+        "url": "http://scribblemaps.com/",
+        "purpose": "Create your own map. redundant probably"
+    },
+    {
+        "url": "https://opensignal.com/",
+        "purpose": "selling high-level cellular usage analytics"
+    },
+    {
+        "url": "http://www.bing.com/maps/",
+        "purpose": "a map"
+    },
+    {
+        "url": "https://maps.here.com/",
+        "purpose": "another map"
+    },
+    {
+        "url": "http://www.instantstreetview.com/",
+        "purpose": "another map"
+    },
+    {
+        "url": "http://www.openstreetmap.org/#map=5/40.614/-100.679",
+        "purpose": "another map"
+    },
+    {
+        "url": "http://www.flashearth.com/",
+        "purpose": "map"
+    },
+    {
+        "url": "http://www.historicaerials.com/?javascript=&",
+        "purpose": "bad historic aerial views - barely readable google is better"
+    },
+    {
+        "url": "https://www.terraserver.com/view",
+        "purpose": "map"
+    },
+    {
+        "url": "http://map.baidu.com/",
+        "purpose": "map"
+    },
+    {
+        "url": "http://corona.cast.uark.edu/",
+        "purpose": "Google map overlay with what appears to be zones in ME/NA. Relevant??"
+    },
+    {
+        "url": "http://map.daum.net/",
+        "purpose": "Korean map"
+    },
+    {
+        "url": "http://www.openstreetmap.org/#map=5/51.500/-0.100",
+        "purpose": "map"
+    },
+    {
+        "url": "http://openstreetcam.org/",
+        "purpose": "Old street view shots. Dup?"
+    },
+    {
+        "url": "http://www.openrailwaymap.org/",
+        "purpose": "Choo choo"
+    },
+    {
+        "url": "https://www.yandex.com/",
+        "purpose": "search engine"
+    },
+    {
+        "url": "http://www.izito.com/",
+        "purpose": "another search engine"
+    },
+    {
+        "url": "https://www.ixquick.com/",
+        "purpose": "and another"
+    },
+    {
+        "url": "https://hulbee.com/",
+        "purpose": "probably another here too"
+    },
+    {
+        "url": "http://biznar.com/biznar/desktop/en/search.html"
+    },
+    {
+        "url": "http://yippy.com/",
+        "purpose": "interesting search engine"
+    },
+    {
+        "url": "http://www.whostalkin.com/",
+        "purpose": "increases online presence for a fee"
+    },
+    {
+        "url": "http://answerthepublic.com/",
+        "purpose": "???"
+    },
+    {
+        "url": "http://www.searchftps.net/",
+        "purpose": "FTP search engine check for relevancy and accuracy"
+    },
+    {
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/",
+        "purpose": "Pubmed - medical articles and experiment results"
+    },
+    {
+        "url": "http://ssrn.com/en/",
+        "purpose": "academic paper research probably for fee"
+    },
+    {
+        "url": "http://discovery.nationalarchives.gov.uk/",
+        "purpose": "Index of records, can download some"
+    },
+    {
+        "url": "https://www.gpo.gov/fdsys/",
+        "purpose": "US Government data and records"
+    },
+    {
+        "url": "http://www.opendoar.org/search.php"
+    },
+    {
+        "url": "http://pqdtopen.proquest.com/search.html"
+    },
+    {
+        "url": "http://guides.library.harvard.edu/hks/think_tank_search"
+    },
+    {
+        "url": "http://www.pagepress.org/"
+    },
+    {
+        "url": "http://explorer.opensyllabusproject.org/"
+    },
+    {
+        "url": "http://www.thescipub.com/"
+    },
+    {
+        "url": "http://www.thepaperboy.com/"
+    },
+    {
+        "url": "https://news.google.com/news/advanced_news_search?"
+    },
+    {
+        "url": "http://newspaperarchive.com/"
+    },
+    {
+        "url": "http://www.pressreader.com/"
+    },
+    {
+        "url": "http://newspapermap.com/"
+    },
+    {
+        "url": "http://emm.newsbrief.eu/NewsBrief/clusteredition/en/latest.html"
+    },
+    {
+        "url": "http://www.allyoucanread.com/"
+    },
+    {
+        "url": "http://www.newsnow.co.uk/h/"
+    },
+    {
+        "url": "http://hubii.com/"
+    },
+    {
+        "url": "http://search-id.com/"
+    },
+    {
+        "url": "http://www.bishopfox.com/download/405/"
+    },
+    {
+        "url": "http://www.talkwalker.com/alerts"
+    },
+    {
+        "url": "https://www.exploit-db.com/google-hacking-database/",
+        "purpose": "classic exploit db"
+    },
+    {
+        "url": "http://googleguide.com/advanced_operators_reference.html"
+    },
+    {
+        "url": "http://googleguide.com/help/calculator.html",
+        "purpose": "How to googlefu"
+    },
+    {
+        "url": "http://www.politifact.com/",
+        "purpose": "politics not relevant"
+    },
+    {
+        "url": "http://www.factcheck.org/scicheck/"
+    },
+    {
+        "url": "http://reporterslab.org/fact-checking/"
+    },
+    {
+        "url": "http://www.snopes.com/"
+    },
+    {
+        "url": "http://verificationjunkie.com/",
+        "purpose": "Interesting site to revisit"
+    },
+    {
+        "url": "http://www.delphiforums.com/",
+        "purpose": "Social media collection of blogs??"
+    },
+    {
+        "url": "http://www.icerocket.com/advancedsearch?tab=blog&q=&n=&e=&a=&domain=&query=",
+        "purpose": "not relevant"
+    },
+    {
+        "url": "http://www.notey.com/",
+        "purpose": "not relevant"
+    },
+    {
+        "url": "http://irc.netsplit.de/channels/search.php",
+        "purpose": "IRC link"
+    },
+    {
+        "url": "http://webcitation.org/query",
+        "purpose": "Way back"
+    },
+    {
+        "url": "http://www.webarchive.org.uk/ukwa/",
+        "purpose": "Way back UK style"
+    },
+    {
+        "url": "http://www.screenshots.com/",
+        "purpose": "Immediate login. No idea."
+    },
+    {
+        "url": "http://www.bounceapp.com/",
+        "purpose": "Hipster file sharing site. I guess."
+    },
+    {
+        "url": "http://lsun.cs.princeton.edu/2016/",
+        "purpose": 404
+    },
+    {
+        "url": "http://chroniclingamerica.loc.gov/",
+        "purpose": "Library of Congress."
+    },
+    {
+        "url": "http://chroniclingamerica.loc.gov/search/titles/",
+        "purpose": "More LoC"
+    },
+    {
+        "url": "https://www.deepl.com/",
+        "purpose": "translator"
+    },
+    {
+        "url": "http://translate.reference.com/",
+        "purpose": "translator"
+    },
+    {
+        "url": "http://www.noslang.com/",
+        "purpose": "dictionary"
+    },
+    {
+        "url": "http://www.urbandictionary.com/",
+        "purpose": "dictionary"
+    },
+    {
+        "url": "http://www.free-ocr.com/",
+        "purpose": "OCR - works"
+    },
+    {
+        "url": "http://www.onlineocr.net/"
+    },
+    {
+        "url": "http://www.sno.phy.queensu.ca/~phil/exiftool/"
+    },
+    {
+        "url": "http://www.codetwo.com/freeware/outlook-export/"
+    },
+    {
+        "url": "http://www.bluestacks.com/"
+    },
+    {
+        "url": "http://www.andyroid.net/"
+    },
+    {
+        "url": "http://www.start.umd.edu/gtd/"
+    },
+    {
+        "url": "https://www.torproject.org/download/download-easy.html.en"
+    },
+    {
+        "url": "https://oint.ctrlbox.com/"
+    },
+    {
+        "url": "https://www.blocktrail.com/BTC"
+    },
+    {
+        "url": "https://blockchain.info/"
+    },
+    {
+        "url": "http://bitcoinwhoswho.com/"
+    },
+    {
+        "url": "https://etherchain.org/accounts/"
+    },
+    {
+        "url": "http://moneroblocks.info/"
+    },
+    {
+        "url": "https://chainradar.com/xmr/blocks"
+    },
+    {
+        "url": "http://craigslist.org/"
+    },
+    {
+        "url": "http://www.kijiji.ca/"
+    },
+    {
+        "url": "http://www.ebay.com/"
+    },
+    {
+        "url": "http://www.goofbid.com/"
+    },
+    {
+        "url": "http://www.totalcraigsearch.com/"
+    },
+    {
+        "url": "http://www.searchtempest.com/",
+        "purpose": "All the Junk: Craig's List, Ebay, Amazon used"
+    },
+    {
+        "url": "http://www.oodle.com/",
+        "purpose": "sketchy-looking Craig's list rip off"
+    },
+    {
+        "url": "http://online-barcode-reader.inliteresearch.com/",
+        "purpose": "tool"
+    },
+    {
+        "url": "http://jsbeautifier.org/",
+        "purpose": "tool"
+    },
+    {
+        "url": "https://getfirebug.com/downloads/",
+        "purpose": "tool"
+    },
+    {
+        "url": "http://blog.didierstevens.com/programs/xorsearch/",
+        "purpose": "tool"
+    },
+    {
+        "url": "http://www.spiderfoot.net/",
+        "purpose": "tool"
+    },
+    {
+        "url": "https://flow.microsoft.com/en-us/"
+    },
+    {
+        "url": "http://www.vmware.com/products/player/playerpro-evaluation.html",
+        "purpose": "VMWare"
+    },
+    {
+        "url": "http://www.paterva.com/web6/products/maltego.php",
+        "purpose": "Maltego folks, tool"
+    },
+    {
+        "url": "http://www.document-analyzer.net/",
+        "purpose": "Might be good for steg challenges"
+    },
+    {
+        "url": "https://www.apk-analyzer.net/",
+        "purpose": "dupe"
+    },
+    {
+        "url": "https://www.file-analyzer.net/",
+        "purpose": "dupe"
+    },
+    {
+        "url": "http://sandbox.pikker.ee/",
+        "purpose": "File analysis not sure exactly what this does"
+    },
+    {
+        "url": "http://www.threatexpert.com/submit.aspx",
+        "purpose": "Symantec's home page"
+    },
+    {
+        "url": "http://go.microsoft.com/fwlink/?LinkID=158791",
+        "purpose": "A link to a mystery zip. Pass"
+    },
+    {
+        "url": "http://blog.didierstevens.com/programs/pdf-tools/",
+        "purpose": "??? Lots of python tools ???"
+    },
+    {
+        "url": "http://www.fortypoundhead.com/tools_dpw.asp",
+        "purpose": "A few useful tools, and a Shakesperean Insult Generator. Begone!"
+    },
+    {
+        "url": "http://routerpasswords.com/",
+        "purpose": "Not OSINT but useful for Meow"
+    },
+    {
+        "url": "http://www.securityfocus.com/bid",
+        "purpose": "Not OSINT - list of reported vulnerabilities"
+    },
+    {
+        "url": "http://www.cvedetails.com/",
+        "purpose": "Not OSINT but interesting",
+        "next": "interesting revisit"
+    },
+    {
+        "url": "http://0day.today/",
+        "purpose": "Not OSINT - collection of threats"
+    },
+    {
+        "url": "https://secuniaresearch.flexerasoftware.com/community/research/",
+        "purpose": "Not OSINT - Small business selling security services."
+    },
+    {
+        "url": "https://attack.mitre.org/wiki/All_Techniques",
+        "purpose": "Not OSINT attack emulation software"
+    },
+    {
+        "url": "http://www.misp-project.org/",
+        "purpose": "Looks interesting but possible scam"
+    },
+    {
+        "url": "https://www.malwarepatrol.net/open-source.shtml",
+        "purpose": "Selling \"threat intel\""
+    },
+    {
+        "url": "http://www.projecthoneypot.org/",
+        "purpose": "Not OSINT but interesting",
+        "next": "look into this"
+    },
+    {
+        "url": "http://www.fakenamegenerator.com/",
+        "purpose": "Decent fake name and background generator"
+    },
+    {
+        "url": "http://justdelete.me/fake-identity-generator/",
+        "purpose": "Fake name for the lazy"
+    },
+    {
+        "url": "https://www.torproject.org/download/download-easy.html.en",
+        "purpose": "Tor"
+    },
+    {
+        "url": "https://www.perfect-privacy.com/check-ip/",
+        "purpose": "scammy"
+    },
+    {
+        "url": "https://www.perfect-privacy.com/webrtc-leaktest/",
+        "purpose": "scammy"
+    },
+    {
+        "url": "http://www.whatsmybrowser.org/",
+        "purpose": "Basic browser information for normies"
+    },
+    {
+        "url": "http://backgroundchecks.org/justdeleteme/",
+        "purpose": "Page of links to account logins"
+    },
+    {
+        "url": "http://www.hunch.ly/",
+        "purpose": "Used for last CTF, place to house captured data."
+    },
+    {
+        "url": "https://portswigger.net/burp/download.html",
+        "purpose": "Tool: Burp"
+    },
+    {
+        "url": "https://www.magnetforensics.com/free-tool-web-page-saver/"
+    },
+    {
+        "url": "http://labs.teehanlax.com/project/hyperlapse"
+    },
+    {
+        "url": "http://www.plessas.net/site/"
+    },
+    {
+        "url": "https://www.sans.org/sec487",
+        "purpose": "Education: SANS website"
+    },
+    {
+        "url": "--NEW--"
+    },
+    {
+        "url": "http://www.analyzemywriting.com/",
+        "purpose": "writing analysis",
+        "registration": "no",
+        "cost": "free",
+        "next": "test for accuracy",
+        "input": "writing sample",
+        "output": "statistics to verify against another sample"
     }
 ]
