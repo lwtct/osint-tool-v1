@@ -64,7 +64,20 @@ querry_type = {
     'IP adress' : 6,
     'domain name' : 7,
     'Name' : 8,
-    'Phone number' : 9
+    'Phone number' : 9,
+    'Classification' : 10,
+    'Malware check' : 11,
+    'Threat detection' : 12,
+    'Redirection': 13,
+    'History': 14,
+    'Trend' : 15,
+    'Term' : 16,
+    'Dark web': 17,
+    'Black list': 18,
+    'Web crawling': 19,
+    'Image' : 20,
+    'Location' : 21,
+    'Video' : 22
 }
 
 print(Automate().execute(["hello"]))
