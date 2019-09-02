@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request
 from urllib.parse import urlparse
 import json
+from automation import Automate
 
 app = Flask(__name__,static_url_path='', static_folder='static')
-
 
 def search_database(input_number, output_number):
     pav_list = []  # defines the URL output list
@@ -66,6 +66,9 @@ querry_type = {
     'Name' : 8,
     'Phone number' : 9
 }
+
+print(Automate().execute(["hello"]))
+
 
 @app.route('/', methods=['POST'])
 def my_form_post():

@@ -1,3 +1,5 @@
-class exec:
-    def __init__(self):
-        print("hey")
+class DomainAutomation:
+
+    def exec(self):
+        output = "hey"
+        return output
