@@ -6,7 +6,7 @@
     {
         "url": "Redirect List",
         "dictonary": 2,
-        "undefined": "physical adress"
+        "undefined": "Home Adress"
     },
     {
         "url": "URL",
@@ -15,7 +15,7 @@
         "cost": "Fee",
         "next": "Next steps",
         "dictonary": 3,
-        "undefined": "online ailias"
+        "undefined": "online alias"
     },
     {
         "url": "http://knowem.com/",
@@ -51,25 +51,39 @@
         "undefined": "pysical name"
     },
     {
+        "dictonary": 9,
+        "undefined": "phone number"
+    },
+    {
+        "dictonary": 10,
+        "undefined": "classification"
+    },
+    {
         "url": "http://verify-email.org/",
         "purpose": "email verifier ",
         "registration": "Yes - required to even try",
         "cost": "fee-based",
         "input": "[1]",
-        "output": "[5]"
+        "output": "[5]",
+        "dictonary": 11,
+        "undefined": "malware check"
     },
     {
         "url": "http://www.email-validator.net/",
         "purpose": "email verifier ",
         "registration": "Yes - required to even try - requires \"business\" email",
-        "cost": "fee-based"
+        "cost": "fee-based",
+        "dictonary": 12,
+        "undefined": "threat detection"
     },
     {
         "url": "http://www.tcpiputils.com/dns-blackhole-list",
         "purpose": "DNS lookup - firefox add on",
         "registration": "Yes - can only access your own data and search by IPs against \"known\" scam IPs for free, all else is fee based",
         "cost": "$$$",
-        "input": "[6]"
+        "input": "[6]",
+        "dictonary": 13,
+        "undefined": "redirection\n"
     },
     {
         "url": "http://mxtoolbox.com/",
@@ -78,7 +92,9 @@
         "cost": "optional",
         "next": "Register might be worth it.",
         "input": "[7]",
-        "output": "[4]"
+        "output": "[4]",
+        "dictonary": 14,
+        "undefined": "history"
     },
     {
         "url": "http://domainbigdata.com/",
@@ -87,28 +103,52 @@
         "cost": "free",
         "next": "free",
         "input": "[7]",
-        "output": "[4]"
+        "output": "[4]",
+        "dictonary": 15,
+        "undefined": "trend"
     },
     {
         "url": "https://tools.dnsstuff.com",
         "purpose": "DNS stuff, various tools",
         "registration": "Yes",
         "cost": "free trials",
-        "output": "[4]"
+        "output": "[4]",
+        "dictonary": 16,
+        "undefined": "term"
+    },
+    {
+        "dictonary": 17,
+        "undefined": "dark web"
     },
     {
         "url": "http://website.informer.com/",
-        "purpose": "Same WhoIs data as others - redundant but free"
+        "purpose": "Same WHOIS data as others - redundant but free",
+        "input": "[7]",
+        "output": "[4]",
+        "dictonary": 18,
+        "undefined": "black list"
+    },
+    {
+        "dictonary": 19,
+        "undefined": "web crawling"
     },
     {
         "url": "http://www.dailychanges.com/",
         "purpose": "good basic info",
         "registration": "captcha ",
         "input": "[7]",
-        "output": "[4]"
+        "output": "[4]",
+        "dictonary": 20,
+        "undefined": "image"
     },
     {
-        "url": "https://github.com/RandomStorm/Bluto"
+        "url": "https://github.com/RandomStorm/Bluto",
+        "dictonary": 21,
+        "undefined": "location"
+    },
+    {
+        "dictonary": 22,
+        "undefined": "video"
     },
     {
         "url": "http://www.urlvoid.com/",
@@ -120,11 +160,15 @@
     {
         "url": "http://fortiguard.com/iprep",
         "purpose": "real time threat data",
-        "registration": "revisit"
+        "registration": "revisit",
+        "input": "[7]",
+        "output": "[10]"
     },
     {
         "url": "http://www.trustedsource.org/",
-        "purpose": "legit site or not"
+        "purpose": "legit site or not",
+        "input": "[7]",
+        "output": "[5]"
     },
     {
         "url": "https://sitereview.bluecoat.com/sitereview.jsp",
@@ -137,11 +181,15 @@
     {
         "url": "https://www.url-analyzer.net/",
         "purpose": "scans sites and files for malware, etc",
-        "registration": "revsit"
+        "registration": "revsit",
+        "input": "[7]",
+        "output": "[11]"
     },
     {
         "url": "http://www.senderbase.org/",
-        "purpose": "dupe? cisco threat detection"
+        "purpose": "dupe? cisco threat detection",
+        "input": "[7, 6]",
+        "output": "[12, 5]"
     },
     {
         "url": "http://www.avgthreatlabs.com/ww-en/website-safety-reports/",
@@ -188,7 +236,9 @@
     {
         "url": "http://builtwith.com/",
         "purpose": "website data",
-        "registration": "revisit"
+        "registration": "revisit",
+        "input": "[7]",
+        "output": "[4]"
     },
     {
         "url": "http://toolbar.netcraft.com/site_report?url=undefined#last_reboot",
@@ -196,7 +246,9 @@
     },
     {
         "url": "http://www.statscrop.com/",
-        "purpose": "website data"
+        "purpose": "website data",
+        "input": "[7]",
+        "output": "[4]"
     },
     {
         "url": "https://moz.com/researchtools/ose/",
@@ -210,7 +262,9 @@
     },
     {
         "url": "http://www.alexa.com/siteinfo",
-        "purpose": "website data"
+        "purpose": "website data",
+        "input": "[7]",
+        "output": "[4]"
     },
     {
         "url": "http://www.alexa.com/topsites",
@@ -219,24 +273,34 @@
     {
         "url": "https://w3dt.net/",
         "purpose": "website data",
-        "registration": "revisit -- good collection of tools"
+        "registration": "revisit -- good collection of tools",
+        "input": "[7, 6]",
+        "output": "[4, 5]"
     },
     {
         "url": "http://urlex.org/",
-        "purpose": "??"
+        "purpose": "??",
+        "input": "[7]",
+        "output": "[13]"
     },
     {
         "url": "http://www.knowurl.com/",
         "purpose": "MIA"
     },
     {
-        "url": "http://visualping.io/"
+        "url": "http://visualping.io/",
+        "input": "[7]",
+        "output": "[14]"
     },
     {
-        "url": "https://www.google.com/trends/"
+        "url": "https://www.google.com/trends/",
+        "input": "[16]",
+        "output": "[15]"
     },
     {
-        "url": "http://dnssec-debugger.verisignlabs.com/"
+        "url": "http://dnssec-debugger.verisignlabs.com/",
+        "input": "[7]",
+        "output": "[4]"
     },
     {
         "url": "https://portswigger.net/burp/"
@@ -251,11 +315,15 @@
         "url": "https://github.com/ChrisTruncer/EyeWitness"
     },
     {
-        "url": "http://www.ip2location.com/demo.aspx"
+        "url": "http://www.ip2location.com/demo.aspx",
+        "input": "[6]",
+        "output": "[4]"
     },
     {
         "url": "http://www.ipfingerprints.com/",
-        "purpose": "IP:address"
+        "purpose": "IP:address",
+        "input": "[6]",
+        "output": "[2]"
     },
     {
         "url": "http://www.infosniper.net/",
@@ -274,19 +342,29 @@
     },
     {
         "url": "http://www.ipvoid.com/",
-        "purpose": "data from an IP"
+        "purpose": "data from an IP",
+        "input": "[6]",
+        "output": "[4]"
     },
     {
-        "url": "https://exonerator.torproject.org/"
+        "url": "https://exonerator.torproject.org/",
+        "input": "[6]",
+        "output": "[17]"
     },
     {
-        "url": "http://www.projecthoneypot.org/list_of_ips.php"
+        "url": "http://www.projecthoneypot.org/list_of_ips.php",
+        "input": "[6]",
+        "output": "[18]"
     },
     {
-        "url": "http://www.ipfingerprints.com/reverseip.php"
+        "url": "http://www.ipfingerprints.com/reverseip.php",
+        "input": "[6]",
+        "output": "[7]"
     },
     {
-        "url": "http://www.tcpiputils.com/domain-neighbors"
+        "url": "http://www.tcpiputils.com/domain-neighbors",
+        "input": "[6]",
+        "output": "[7]"
     },
     {
         "url": "http://www.packettotal.com/"
@@ -296,48 +374,69 @@
     },
     {
         "url": "http://www.bing.com/images",
-        "purpose": "reverse image"
+        "purpose": "reverse image",
+        "input": "[20]",
+        "output": "[16]"
     },
     {
         "url": "http://images.yahoo.com/",
-        "purpose": "reverse image"
+        "purpose": "reverse image",
+        "input": "[20]",
+        "output": "[16]"
     },
     {
         "url": "http://tineye.com/",
-        "purpose": "reverse image exif data"
+        "purpose": "reverse image exif data",
+        "input": "[20]",
+        "output": "[4]"
     },
     {
-        "url": "http://shitu.baidu.com/"
+        "url": "http://shitu.baidu.com/",
+        "input": "[16]",
+        "output": "[20]"
     },
     {
         "url": "http://photobucket.com/"
     },
     {
-        "url": "http://www.picsearch.com/"
+        "url": "http://www.picsearch.com/",
+        "input": "[16]",
+        "output": "[20]"
     },
     {
         "url": "http://7photos.net/"
     },
     {
-        "url": "http://current-location.com/"
+        "url": "http://current-location.com/",
+        "input": " [21]",
+        "output": "[20]"
     },
     {
         "url": "http://camfindapp.com/"
     },
     {
-        "url": "http://mininsta.net/"
+        "url": "http://mininsta.net/",
+        "purpose": "didn't get past security filter"
     },
     {
-        "url": "http://idgettr.com/"
+        "url": "http:",
+        "purpose": "image finder",
+        "input": "[20]",
+        "output": "[3]"
     },
     {
-        "url": "http://www.sno.phy.queensu.ca/~phil/exiftool/"
+        "url": "http://www.sno.phy.queensu.ca/~phil/exiftool/",
+        "purpose": "exif"
     },
     {
-        "url": "http://exif.regex.info/"
+        "url": "http://exif.regex.info/",
+        "purpose": "exif",
+        "input": "[20]",
+        "output": "[4]"
     },
     {
-        "url": "http://www.exif-search.com/"
+        "url": "http://www.exif-search.com/",
+        "purpose": "exif"
     },
     {
         "url": "http://www.impulseadventure.com/photo/jpeg-snoop.html"
@@ -346,33 +445,48 @@
         "url": "http://www.geosetter.de/en/"
     },
     {
-        "url": "http://www.stolencamerafinder.co.uk/"
+        "url": "http://www.stolencamerafinder.co.uk/",
+        "purpose": "invalid link"
     },
     {
-        "url": "http://www.free-ocr.com/"
+        "url": "http://www.free-ocr.com/",
+        "purpose": "OCR, commercial and potentially misleading"
     },
     {
-        "url": "http://www.onlineocr.net/"
+        "url": "http://www.onlineocr.net/",
+        "purpose": "confusing ad placement",
+        "input": "[20]",
+        "output": "[20]"
     },
     {
-        "url": "http://www.bing.com/videos"
+        "url": "http://www.bing.com/videos",
+        "input": "[16]",
+        "output": "[22]"
     },
     {
         "url": "http://www.dogpile.com/",
-        "purpose": "search"
+        "purpose": "search",
+        "input": "[16]\n",
+        "output": "[7, 22, 20]"
     },
     {
-        "url": "http://www.blinkx.com/"
+        "url": "http://www.blinkx.com/",
+        "input": "[16]\n",
+        "output": "[22]"
     },
     {
         "url": "https://www.facebook.com/livemap#"
     },
     {
-        "url": "http://www.metatube.com/"
+        "url": "http://www.metatube.com/",
+        "input": "[16]",
+        "output": "[22]"
     },
     {
         "url": "http://video.search.yahoo.com/",
-        "purpose": "Yahoo search engine why?"
+        "purpose": "Yahoo search engine why?",
+        "input": "[16]",
+        "output": "[7, 22, 20]"
     },
     {
         "url": "http://www.labnol.org/internet/print-youtube-video/28217/"
@@ -461,7 +575,7 @@
         "purpose": "twitter visualization for fee can't even search without registration"
     },
     {
-        "url": "http:",
+        "url": "http://trendsmap.com/",
         "purpose": "more agregate twitter info, one click asks for $"
     },
     {
@@ -565,22 +679,28 @@
         "url": "http://www.ussearch.com/"
     },
     {
-        "url": "http://www.melissadata.com/lookups/peoplefinder.asp"
+        "url": "http://www.melissadata.com/lookups/peoplefinder.asp",
+        "purpose": "meta search accurate"
     },
     {
-        "url": "http://www.peekyou.com/"
+        "url": "http://www.peekyou.com/",
+        "purpose": "meta search accurate"
     },
     {
-        "url": "http://www.peepdb.com/"
+        "url": "http://www.peepdb.com/",
+        "purpose": "bad redirect"
     },
     {
-        "url": "http://www.reversegenie.com/people.php"
+        "url": "http://www.reversegenie.com/people.php",
+        "purpose": "mostly behind paywall"
     },
     {
-        "url": "http://radaris.com/"
+        "url": "http://radaris.com/",
+        "purpose": "basic info"
     },
     {
-        "url": "http://www.intelius.com/"
+        "url": "http://www.intelius.com/",
+        "purpose": "spotty info wise"
     },
     {
         "url": "http://waatp.com/",
@@ -698,7 +818,8 @@
         "purpose": "hard sell for. . .something"
     },
     {
-        "url": "https://bhattsameer.github.io/numspy"
+        "url": "https://bhattsameer.github.io/numspy",
+        "purpose": "github"
     },
     {
         "url": "http://www.melissadata.com/lookups/propertyviewer.asp",
@@ -760,10 +881,12 @@
         "url": "https://www.google.com/advanced_patent_search"
     },
     {
-        "url": "http://www.followthemoney.org/"
+        "url": "http://www.followthemoney.org/",
+        "purpose": "not relevant for individuals"
     },
     {
-        "url": "http://www.politicalmoneyline.com/"
+        "url": "http://www.politicalmoneyline.com/",
+        "purpose": "not relevant for individuals"
     },
     {
         "url": "http://www.melissadata.com/lookups/fec.asp",
@@ -785,19 +908,24 @@
         "purpose": "corporate data"
     },
     {
-        "url": "http://theinvestormailinglist.com/recent-reports/"
+        "url": "http://theinvestormailinglist.com/recent-reports/",
+        "purpose": "african company data"
     },
     {
-        "url": "http://investing.businessweek.com/research/common/symbollookup/symbollookup.asp"
+        "url": "http://investing.businessweek.com/research/common/symbollookup/symbollookup.asp",
+        "purpose": "big money"
     },
     {
-        "url": "http://www.corporationwiki.com/"
+        "url": "http://www.corporationwiki.com/",
+        "purpose": "big money"
     },
     {
-        "url": "http://www.commercial-register.sg.ch/home/worldwide.html"
+        "url": "http://www.commercial-register.sg.ch/home/worldwide.html",
+        "purpose": "big money"
     },
     {
-        "url": "http://www.sec.gov/edgar.shtml"
+        "url": "http://www.sec.gov/edgar.shtml",
+        "purpose": "Securities and Exchange Commission"
     },
     {
         "url": "http://globaledge.msu.edu/global-resources"
@@ -807,10 +935,12 @@
         "purpose": "corporate data"
     },
     {
-        "url": "https://connect.data.com/"
+        "url": "https://connect.data.com/",
+        "purpose": "retired arm of Salesforce"
     },
     {
-        "url": "http://www.zoominfo.com/company-directory/us"
+        "url": "http://www.zoominfo.com/company-directory/us",
+        "purpose": "big business information"
     },
     {
         "url": "http://www.infobel.com/en/world/"
@@ -1018,65 +1148,83 @@
         "purpose": "US Government data and records"
     },
     {
-        "url": "http://www.opendoar.org/search.php"
+        "url": "http://www.opendoar.org/search.php",
+        "purpose": "search engine for academic repositories",
+        "registration": "failed 5/5 times"
     },
     {
-        "url": "http://pqdtopen.proquest.com/search.html"
+        "url": "http://pqdtopen.proquest.com/search.html",
+        "purpose": "dissertations"
     },
     {
-        "url": "http://guides.library.harvard.edu/hks/think_tank_search"
+        "url": "http://guides.library.harvard.edu/hks/think_tank_search",
+        "purpose": "harvard think tank why?"
     },
     {
-        "url": "http://www.pagepress.org/"
+        "url": "http://www.pagepress.org/",
+        "purpose": "medical journals"
     },
     {
-        "url": "http://explorer.opensyllabusproject.org/"
+        "url": "http://explorer.opensyllabusproject.org/",
+        "purpose": "virus filter blocked"
     },
     {
-        "url": "http://www.thescipub.com/"
+        "url": "http://www.thescipub.com/",
+        "purpose": "abstracts of technical journals"
     },
     {
-        "url": "http://www.thepaperboy.com/"
+        "url": "http://www.thepaperboy.com/",
+        "purpose": "american newspapers"
     },
     {
         "url": "https://news.google.com/news/advanced_news_search?"
     },
     {
-        "url": "http://newspaperarchive.com/"
+        "url": "http://newspaperarchive.com/",
+        "purpose": "newspapers"
     },
     {
-        "url": "http://www.pressreader.com/"
+        "url": "http://www.pressreader.com/",
+        "purpose": "newspapers"
     },
     {
-        "url": "http://newspapermap.com/"
+        "url": "http://newspapermap.com/",
+        "purpose": "newspapers"
     },
     {
         "url": "http://emm.newsbrief.eu/NewsBrief/clusteredition/en/latest.html"
     },
     {
-        "url": "http://www.allyoucanread.com/"
+        "url": "http://www.allyoucanread.com/",
+        "purpose": "magazine subscription sales site"
     },
     {
-        "url": "http://www.newsnow.co.uk/h/"
+        "url": "http://www.newsnow.co.uk/h/",
+        "purpose": "agregate news site"
     },
     {
-        "url": "http://hubii.com/"
+        "url": "http://hubii.com/",
+        "purpose": "used to be an agregate news site, now an erithrium blockchain reseller"
     },
     {
-        "url": "http://search-id.com/"
+        "url": "http://search-id.com/",
+        "purpose": "AOL users' interenet searches -- old"
     },
     {
-        "url": "http://www.bishopfox.com/download/405/"
+        "url": "http://www.bishopfox.com/download/405/",
+        "purpose": "independent pentester"
     },
     {
-        "url": "http://www.talkwalker.com/alerts"
+        "url": "http://www.talkwalker.com/alerts",
+        "purpose": "Google Alerts alternative"
     },
     {
         "url": "https://www.exploit-db.com/google-hacking-database/",
         "purpose": "classic exploit db"
     },
     {
-        "url": "http://googleguide.com/advanced_operators_reference.html"
+        "url": "http://googleguide.com/advanced_operators_reference.html",
+        "purpose": "How to googlefu"
     },
     {
         "url": "http://googleguide.com/help/calculator.html",
@@ -1185,40 +1333,52 @@
         "url": "https://www.torproject.org/download/download-easy.html.en"
     },
     {
-        "url": "https://oint.ctrlbox.com/"
+        "url": "https://oint.ctrlbox.com/",
+        "purpose": "webtech overview"
     },
     {
-        "url": "https://www.blocktrail.com/BTC"
+        "url": "https://www.blocktrail.com/BTC",
+        "purpose": "redirects "
     },
     {
-        "url": "https://blockchain.info/"
+        "url": "https://blockchain.info/",
+        "purpose": "redirects to blockchain.com"
     },
     {
-        "url": "http://bitcoinwhoswho.com/"
+        "url": "http://bitcoinwhoswho.com/",
+        "purpose": "useful"
     },
     {
-        "url": "https://etherchain.org/accounts/"
+        "url": "https://etherchain.org/accounts/",
+        "purpose": "cryptocurrency"
     },
     {
-        "url": "http://moneroblocks.info/"
+        "url": "http://moneroblocks.info/",
+        "purpose": "cryptocurrency"
     },
     {
-        "url": "https://chainradar.com/xmr/blocks"
+        "url": "https://chainradar.com/xmr/blocks",
+        "purpose": "bitcoin"
     },
     {
-        "url": "http://craigslist.org/"
+        "url": "http://craigslist.org/",
+        "purpose": "junk for sale"
     },
     {
-        "url": "http://www.kijiji.ca/"
+        "url": "http://www.kijiji.ca/",
+        "purpose": "canadian craig's list"
     },
     {
-        "url": "http://www.ebay.com/"
+        "url": "http://www.ebay.com/",
+        "purpose": "delete"
     },
     {
-        "url": "http://www.goofbid.com/"
+        "url": "http://www.goofbid.com/",
+        "purpose": "ebay automatic bidder"
     },
     {
-        "url": "http://www.totalcraigsearch.com/"
+        "url": "http://www.totalcraigsearch.com/",
+        "purpose": "virus filter blocked"
     },
     {
         "url": "http://www.searchtempest.com/",
@@ -1379,7 +1539,7 @@
         "purpose": "Education: SANS website"
     },
     {
-        "url": "--NEW--"
+        "url": "--NEW: The Dust Bin--"
     },
     {
         "url": "http://www.analyzemywriting.com/",
