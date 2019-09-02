@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request
 from urllib.parse import urlparse
 import json
-from automation import Automate
+import automation
+import threading
 
+
+
+automate = automation.Automate()
 app = Flask(__name__,static_url_path='', static_folder='static')
 
 def search_database(input_number, output_number):
@@ -53,6 +57,8 @@ def search_database(input_number, output_number):
             except Exception:  # deals with the errors
                 pass
             data_counter += 1  # moves on to next entry in list 'data'
+    out_list = automate.execute(dom_list)
+    print(out_list)
     return pav_list, des_list, dom_list # when completed this returns a list of all URLs and description with the correct classification
 
 querry_type = {
@@ -67,7 +73,7 @@ querry_type = {
     'Phone number' : 9
 }
 
-print(Automate().execute(["hello"]))
+#print(automate.execute(["hello"]))
 
 
 @app.route('/', methods=['POST'])
@@ -92,4 +98,5 @@ def root():
     output = request.args.get("input")
     return render_template("index.jinja", types=querry_type.keys(), output=output)
 
-app.run(debug=True)
+app.run(debug=False)
+
