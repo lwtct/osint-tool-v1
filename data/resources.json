@@ -23,7 +23,8 @@
         "registration": "Yes",
         "cost": "For the identity creation.",
         "next": "Create login to see more data? Searched with known user names and seemed accurate.",
-        "input": "[8 ,3] [?]",
+        "input": [8 ,3], 
+        "output":["?"],
         "dictonary": 4,
         "undefined": "general information"
     },
@@ -37,8 +38,8 @@
         "registration": "Yes",
         "cost": "Two free people searches, then register and fee-based. ",
         "next": "Log in to see extent of free service?",
-        "input": "[1]",
-        "output": "[4, 5]",
+        "input": [1],
+        "output": [4, 5],
         "dictonary": 6,
         "undefined": "IP-adress"
     },
@@ -63,8 +64,8 @@
         "purpose": "email verifier ",
         "registration": "Yes - required to even try",
         "cost": "fee-based",
-        "input": "[1]",
-        "output": "[5]",
+        "input": [1],
+        "output": [5],
         "dictonary": 11,
         "undefined": "malware check"
     },
@@ -81,7 +82,7 @@
         "purpose": "DNS lookup - firefox add on",
         "registration": "Yes - can only access your own data and search by IPs against \"known\" scam IPs for free, all else is fee based",
         "cost": "$$$",
-        "input": "[6]",
+        "input": [6],
         "dictonary": 13,
         "undefined": "redirection\n"
     },
@@ -91,8 +92,8 @@
         "registration": "Yes, optional",
         "cost": "optional",
         "next": "Register might be worth it.",
-        "input": "[7]",
-        "output": "[4]",
+        "input": [7],
+        "output": [4],
         "dictonary": 14,
         "undefined": "history"
     },
@@ -102,8 +103,8 @@
         "registration": "Not that I saw",
         "cost": "free",
         "next": "free",
-        "input": "[7]",
-        "output": "[4]",
+        "input": [7],
+        "output": [4],
         "dictonary": 15,
         "undefined": "trend"
     },
@@ -112,7 +113,7 @@
         "purpose": "DNS stuff, various tools",
         "registration": "Yes",
         "cost": "free trials",
-        "output": "[4]",
+        "output": [4],
         "dictonary": 16,
         "undefined": "term"
     },
@@ -123,8 +124,8 @@
     {
         "url": "http://website.informer.com/",
         "purpose": "Same WHOIS data as others - redundant but free",
-        "input": "[7]",
-        "output": "[4]",
+        "input": [7],
+        "output": [4],
         "dictonary": 18,
         "undefined": "black list"
     },
@@ -136,8 +137,8 @@
         "url": "http://www.dailychanges.com/",
         "purpose": "good basic info",
         "registration": "captcha ",
-        "input": "[7]",
-        "output": "[4]",
+        "input": [7],
+        "output": [4],
         "dictonary": 20,
         "undefined": "image"
     },
@@ -154,21 +155,21 @@
         "url": "http://www.urlvoid.com/",
         "purpose": "Good site",
         "next": "deeper look warranted",
-        "input": "[7]",
-        "output": "[4]"
+        "input": [7],
+        "output": [4]
     },
     {
         "url": "http://fortiguard.com/iprep",
         "purpose": "real time threat data",
         "registration": "revisit",
-        "input": "[7]",
-        "output": "[10]"
+        "input": [7],
+        "output": [10]
     },
     {
         "url": "http://www.trustedsource.org/",
         "purpose": "legit site or not",
-        "input": "[7]",
-        "output": "[5]"
+        "input": [7],
+        "output": [5]
     },
     {
         "url": "https://sitereview.bluecoat.com/sitereview.jsp",
@@ -182,14 +183,14 @@
         "url": "https://www.url-analyzer.net/",
         "purpose": "scans sites and files for malware, etc",
         "registration": "revsit",
-        "input": "[7]",
-        "output": "[11]"
+        "input": [7],
+        "output": [11]
     },
     {
         "url": "http://www.senderbase.org/",
         "purpose": "dupe? cisco threat detection",
-        "input": "[7, 6]",
-        "output": "[12, 5]"
+        "input": [7, 6],
+        "output": [12, 5]
     },
     {
         "url": "http://www.avgthreatlabs.com/ww-en/website-safety-reports/",
@@ -237,8 +238,8 @@
         "url": "http://builtwith.com/",
         "purpose": "website data",
         "registration": "revisit",
-        "input": "[7]",
-        "output": "[4]"
+        "input": [7],
+        "output": [4]
     },
     {
         "url": "http://toolbar.netcraft.com/site_report?url=undefined#last_reboot",
@@ -247,8 +248,8 @@
     {
         "url": "http://www.statscrop.com/",
         "purpose": "website data",
-        "input": "[7]",
-        "output": "[4]"
+        "input": [7],
+        "output": [4]
     },
     {
         "url": "https://moz.com/researchtools/ose/",
@@ -263,8 +264,8 @@
     {
         "url": "http://www.alexa.com/siteinfo",
         "purpose": "website data",
-        "input": "[7]",
-        "output": "[4]"
+        "input": [7],
+        "output": [4]
     },
     {
         "url": "http://www.alexa.com/topsites",
@@ -274,14 +275,14 @@
         "url": "https://w3dt.net/",
         "purpose": "website data",
         "registration": "revisit -- good collection of tools",
-        "input": "[7, 6]",
-        "output": "[4, 5]"
+        "input": [7, 6],
+        "output": [4, 5]
     },
     {
         "url": "http://urlex.org/",
         "purpose": "??",
-        "input": "[7]",
-        "output": "[13]"
+        "input": [7],
+        "output": [13]
     },
     {
         "url": "http://www.knowurl.com/",
@@ -289,18 +290,18 @@
     },
     {
         "url": "http://visualping.io/",
-        "input": "[7]",
-        "output": "[14]"
+        "input": [7],
+        "output": [14]
     },
     {
         "url": "https://www.google.com/trends/",
-        "input": "[16]",
-        "output": "[15]"
+        "input": [16],
+        "output": [15]
     },
     {
         "url": "http://dnssec-debugger.verisignlabs.com/",
-        "input": "[7]",
-        "output": "[4]"
+        "input": [7],
+        "output": [4]
     },
     {
         "url": "https://portswigger.net/burp/"
@@ -316,14 +317,14 @@
     },
     {
         "url": "http://www.ip2location.com/demo.aspx",
-        "input": "[6]",
-        "output": "[4]"
+        "input": [6],
+        "output": [4]
     },
     {
         "url": "http://www.ipfingerprints.com/",
         "purpose": "IP:address",
-        "input": "[6]",
-        "output": "[2]"
+        "input": [6],
+        "output": [2]
     },
     {
         "url": "http://www.infosniper.net/",
@@ -343,28 +344,28 @@
     {
         "url": "http://www.ipvoid.com/",
         "purpose": "data from an IP",
-        "input": "[6]",
-        "output": "[4]"
+        "input": [6],
+        "output": [4]
     },
     {
         "url": "https://exonerator.torproject.org/",
-        "input": "[6]",
-        "output": "[17]"
+        "input": [6],
+        "output": [17]
     },
     {
         "url": "http://www.projecthoneypot.org/list_of_ips.php",
-        "input": "[6]",
-        "output": "[18]"
+        "input": [6],
+        "output": [18]
     },
     {
         "url": "http://www.ipfingerprints.com/reverseip.php",
-        "input": "[6]",
-        "output": "[7]"
+        "input": [6],
+        "output": [7]
     },
     {
         "url": "http://www.tcpiputils.com/domain-neighbors",
-        "input": "[6]",
-        "output": "[7]"
+        "input": [6],
+        "output": [7]
     },
     {
         "url": "http://www.packettotal.com/"
@@ -375,41 +376,41 @@
     {
         "url": "http://www.bing.com/images",
         "purpose": "reverse image",
-        "input": "[20]",
-        "output": "[16]"
+        "input": [20],
+        "output": [16]
     },
     {
         "url": "http://images.yahoo.com/",
         "purpose": "reverse image",
-        "input": "[20]",
-        "output": "[16]"
+        "input": [20],
+        "output": [16]
     },
     {
         "url": "http://tineye.com/",
         "purpose": "reverse image exif data",
-        "input": "[20]",
-        "output": "[4]"
+        "input": [20],
+        "output": [4]
     },
     {
         "url": "http://shitu.baidu.com/",
-        "input": "[16]",
-        "output": "[20]"
+        "input": [16],
+        "output": [20]
     },
     {
         "url": "http://photobucket.com/"
     },
     {
         "url": "http://www.picsearch.com/",
-        "input": "[16]",
-        "output": "[20]"
+        "input": [16],
+        "output": [20]
     },
     {
         "url": "http://7photos.net/"
     },
     {
         "url": "http://current-location.com/",
-        "input": " [21]",
-        "output": "[20]"
+        "input": [21],
+        "output": [20]
     },
     {
         "url": "http://camfindapp.com/"
@@ -421,8 +422,8 @@
     {
         "url": "http:",
         "purpose": "image finder",
-        "input": "[20]",
-        "output": "[3]"
+        "input": [20],
+        "output": [3]
     },
     {
         "url": "http://www.sno.phy.queensu.ca/~phil/exiftool/",
@@ -431,8 +432,8 @@
     {
         "url": "http://exif.regex.info/",
         "purpose": "exif",
-        "input": "[20]",
-        "output": "[4]"
+        "input": [20],
+        "output": [4]
     },
     {
         "url": "http://www.exif-search.com/",
@@ -455,38 +456,38 @@
     {
         "url": "http://www.onlineocr.net/",
         "purpose": "confusing ad placement",
-        "input": "[20]",
-        "output": "[20]"
+        "input": [20],
+        "output": [20]
     },
     {
         "url": "http://www.bing.com/videos",
-        "input": "[16]",
-        "output": "[22]"
+        "input": [16],
+        "output": [22]
     },
     {
         "url": "http://www.dogpile.com/",
         "purpose": "search",
-        "input": "[16]\n",
-        "output": "[7, 22, 20]"
+        "input": [16],
+        "output": [7, 22, 20]
     },
     {
         "url": "http://www.blinkx.com/",
-        "input": "[16]\n",
-        "output": "[22]"
+        "input": [16],
+        "output": [22]
     },
     {
         "url": "https://www.facebook.com/livemap#"
     },
     {
         "url": "http://www.metatube.com/",
-        "input": "[16]",
-        "output": "[22]"
+        "input": [16],
+        "output": [22]
     },
     {
         "url": "http://video.search.yahoo.com/",
         "purpose": "Yahoo search engine why?",
-        "input": "[16]",
-        "output": "[7, 22, 20]"
+        "input": [16],
+        "output": [7, 22, 20]
     },
     {
         "url": "http://www.labnol.org/internet/print-youtube-video/28217/"
