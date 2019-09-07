@@ -13,11 +13,15 @@ class Automate():
 
         def execute(self, mod_names):
                 self.filecheck()
-                output_dict = {}
+                output_list = []
                 for name in mod_names:
-                        name = name.lower()
-                        output_dict[name] = self.dict[name].DomainAutomation().exec()
-                return output_dict
+                        try:
+                                name = name.lower()
+                                output_list.append(self.dict[name].DomainAutomation().exec())
+                        except:
+                                output_list.append("Error Module Doesn't Exist")
+                                print("{} module doen't exist.".format(name))
+                return output_list
 
         def filecheck(self):
                 dir_list = os.listdir("modules")

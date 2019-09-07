@@ -7,7 +7,15 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/jquery.min.js"></script>
-        
+        <style type="text/css">
+.h-divider{
+ margin-top:5px;
+ margin-bottom:5px;
+ height:3px;
+ width:100%;
+ border-top:1px solid #DEDEDE;
+}
+</style>
         <title>Home</title>
     </head>
     <body>
@@ -57,7 +65,11 @@
                     <li class="panel-heading{{x}} list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <a class="panel-heading{{x}}" href="{{link_list[x]}}"><h1 style="text-align:center">{{domain_list[x]}}<h1></a>
                         <div style="display:none" class="panel-heading{{x}} panel-collapse{{x}}" id="collapseExample">
-                                <h3 class="panel-heading{{x}}" style="text-align:center">{{desc_list[x]}}<h3>
+                            <h3 class="panel-heading{{x}}" style="text-align:center">{{desc_list[x]}}<h3>
+                            <div class="h-divider"></div>
+                            <h4 style="text-align:center">Output</h4>
+                            <h6 style="text-align:center">{{out_list[x]}}</h6>
+
                         </div>
                     </li>
                     {% endfor %}
