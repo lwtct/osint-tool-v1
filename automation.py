@@ -1,9 +1,5 @@
 import os
 import importlib.util
-import threading
-import signal
-import time
-
 
 class Automate():
         def __init__(self):
