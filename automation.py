@@ -8,12 +8,17 @@ class Automate():
                 self.filecheck() # execute a filecheck
 
         def execute(self, mod_names):
-                self.filecheck() # check if there isn't new files
-                output_dict = {} # init output dict
-                for name in mod_names: # loop over every module name
-                        name = name.lower() # lowercase the name of the module
-                        output_dict[name] = self.dict[name].DomainAutomation().exec() # execute the module with the input
-                return output_dict # return all the result
+                self.filecheck()
+                output_list = []
+                for name in mod_names:
+                        try:
+                                name = name.lower()
+                                output_list.append(self.dict[name].DomainAutomation().exec())
+                        except:
+                                output_list.append("Error Module Doesn't Exist")
+                                print("{} module doen't exist.".format(name))
+                return output_list
+
 
         def filecheck(self):
                 dir_list = os.listdir("modules") # get all files in modules folder 
