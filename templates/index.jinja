@@ -60,19 +60,22 @@
             </div>
             </form>
              <div class="container">
-                <ul class="list-group" style="margin-top:0px; margin-left:225px">
+
+                <ul class="list-group" style="margin-top:-200px; margin-left:225px">
+                <h1 style="text-align:center; margin-top:-50px">{{output_empty_check}}</h1>
+                <div style="height:1200px;width:1200px;border:0px solid #ccc; Serif;overflow:auto;">
                     {% for x in range(link_list|length) %}
                     <li class="panel-heading{{x}} list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        <a class="panel-heading{{x}}" href="{{link_list[x]}}"><h1 style="text-align:left">{{domain_list[x]}}<h1></a>
+                        <a class="panel-heading{{x}}" href="{{link_list[x]}}"><h1 style="text-align:center">{{domain_list[x]}}<h1></a>
                         <div style="display:none" class="panel-heading{{x}} panel-collapse{{x}}" id="collapseExample">
                             <h6 class="panel-heading{{x}}" style="text-align:center">{{desc_list[x]}}<h6>
                             <div class="h-divider"></div>
-                            <h4 style="text-align:left">Output</h4>
+                            <h4 style="text-align:center">Output</h4>
                             <h6 style="text-align:center">{{out_list[x]}}</h6>
-
                         </div>
                     </li>
                     {% endfor %}
+                </div>
                 </ul>
              </div>
         </div>
