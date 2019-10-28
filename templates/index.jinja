@@ -57,18 +57,18 @@
 
                     </h1>
                     <h2>Module output</h2>
-                    <textarea>{{out_list[1]}}</textarea>
+                    <textarea style="width:235px">{{out_list[1]}}</textarea>
                 </div>
             </div>
             </form>
              <div class="container">
 
-                <ul class="list-group" style="margin-top:-300px; margin-left:225px">
+                <ul class="list-group" style="margin-top:-300px; margin-left:300px">
                 <h1 style="text-align:center; margin-top:-50px">{{output_empty_check}}</h1>
                 <div style="height:1200px;width:1200px;border:0px solid #ccc; Serif;overflow:auto;">
                     {% for x in range(link_list|length) %}
                     <li class="panel-heading{{x}} list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <button type="{{domain_list[x]}}", onclick="Function()">
+                    <button type="{{domain_list[x]}}", onclick="Function()", style="width: 1000px", style="height: 50">
                         <a class="panel-heading{{x}}" href="{{link_list[x]}}"><h1 style="text-align:center">{{domain_list[x]}}<h1></a>
                         <div style="display:none" class="panel-heading{{x}} panel-collapse{{x}}" id="collapseExample">
                             <h6 class="panel-heading{{x}}" style="text-align:center">{{desc_list[x]}}<h6>
