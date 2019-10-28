@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"> #defines language
+<html lang="en"> 
     <head>
-        <meta charset="UTF-8"> #defines character set
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="/css/bootstrap.min.css"> #defines location of css style sheet
-        <script src="/js/bootstrap.min.js"></script>  #defines location of bootstrap javascript
-        <script src="/js/jquery.min.js"></script> #defines location of jquery javascript
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
         <style type="text/css">
 .h-divider{
  margin-top:5px;
@@ -56,16 +56,19 @@
                         <input type=submit hidden> 
 
                     </h1>
+                    <h2>Module output</h2>
+                    <textarea>{{out_list[1]}}</textarea>
                 </div>
             </div>
             </form>
              <div class="container">
 
-                <ul class="list-group" style="margin-top:-200px; margin-left:225px">
+                <ul class="list-group" style="margin-top:-300px; margin-left:225px">
                 <h1 style="text-align:center; margin-top:-50px">{{output_empty_check}}</h1>
                 <div style="height:1200px;width:1200px;border:0px solid #ccc; Serif;overflow:auto;">
                     {% for x in range(link_list|length) %}
                     <li class="panel-heading{{x}} list-group-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <button type="{{domain_list[x]}}", onclick="Function()">
                         <a class="panel-heading{{x}}" href="{{link_list[x]}}"><h1 style="text-align:center">{{domain_list[x]}}<h1></a>
                         <div style="display:none" class="panel-heading{{x}} panel-collapse{{x}}" id="collapseExample">
                             <h6 class="panel-heading{{x}}" style="text-align:center">{{desc_list[x]}}<h6>
@@ -73,6 +76,7 @@
                             <h4 style="text-align:center">Output</h4>
                             <h6 style="text-align:center">{{out_list[x]}}</h6>
                         </div>
+                    </button>
                     </li>
                     {% endfor %}
                 </div>
