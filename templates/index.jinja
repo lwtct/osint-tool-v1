@@ -15,6 +15,20 @@
  width:100%;
  border-top:1px solid #DEDEDE;
 }
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
 </style>
         <title>Home</title>
     </head>
@@ -56,14 +70,15 @@
                         <input type=submit hidden> 
 
                     </h1>
-                    <h2>Module output</h2>
-                    <textarea style="width:235px">{{out_list[1]}}</textarea>
+                    <h2>Module input</h2>
+                    <input list="module-input" class="form-control" placeholder="Module input" name="module-input" autocomplete="off"/>
+                    <input type='hidden' name='module-input-submit'>
                 </div>
             </div>
             </form>
              <div class="container">
 
-                <ul class="list-group" style="margin-top:-300px; margin-left:300px">
+                <ul class="list-group" style="margin-top:-310px; margin-left:300px">
                 <h1 style="text-align:center; margin-top:-50px">{{output_empty_check}}</h1>
                 <div style="height:1200px;width:1200px;border:0px solid #ccc; Serif;overflow:auto;">
                     {% for x in range(link_list|length) %}
@@ -91,6 +106,8 @@
     $('[name="input"]').val('');
     $('[name="output-submit"]').val($('[name="output"]').val());
     $('[name="output"]').val('');
+    $('[name="module-input-submit"]').val($('[name="module-input"]').val());
+    $('[name="module-input"]').val('');
   });
 </script>
      <script>

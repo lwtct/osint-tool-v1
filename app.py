@@ -61,6 +61,8 @@ querry_type = {
 def my_form_post():
     output_text = request.form['output'] # get the output type
     input_text = request.form['input'] # get the input type
+    module_input = request.form['module-input']
+    print(module_input)
     if output_text not in querry_type.keys() or input_text not in querry_type.keys(): # check if both input and output are valid
         output = "Invalid Arguments"
         return render_template("index.jinja", types = querry_type.keys(), output = output, search_output = '')
